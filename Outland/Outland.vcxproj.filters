@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{37893ca9-9e35-4b87-a9ee-5dc61c6e5cd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PhysicsCore">
+      <UniqueIdentifier>{bc664f79-5ad0-4764-8126-3d74ccfe81cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics Core">
+      <UniqueIdentifier>{9f77001c-2656-4778-bd22-320996c99033}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics Core\Source Files">
+      <UniqueIdentifier>{224a064c-2e73-49d6-bef3-2a2bcadacd13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics Core\Header Files">
+      <UniqueIdentifier>{a6ccd204-5c79-497d-bc23-c41de9db3bde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AI Core">
+      <UniqueIdentifier>{1cb5c14f-d46e-479a-a77b-292ef20dd143}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio Core">
+      <UniqueIdentifier>{0ff92d30-3709-4adb-b41e-6db557fb0576}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio Core\Source Files">
+      <UniqueIdentifier>{0583c3ff-d187-4356-b647-f45e8bd14c02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio Core\Header Files">
+      <UniqueIdentifier>{33dec78c-7f0b-4022-902e-7819162004d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI Core">
+      <UniqueIdentifier>{ba82795c-9da8-493c-8d4f-bcbe75e374de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player Core">
+      <UniqueIdentifier>{5229de19-4555-4113-8449-ed1b10bb734e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PhysicsCore\Source Files">
+      <UniqueIdentifier>{f31847ee-3909-4a6f-839a-5d26284a2187}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PhysicsCore\Header Files">
+      <UniqueIdentifier>{9ce53941-22b0-44ae-b50a-395e83f93379}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player Core\Source Files">
+      <UniqueIdentifier>{ed3f2b4a-b9f5-436d-8e45-566407b273c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player Core\Header Files">
+      <UniqueIdentifier>{d4abf5c8-3dc0-4958-9b0d-e0cb56d83797}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI Core\Header Files">
+      <UniqueIdentifier>{1e6cb026-18e3-4f1a-8931-9b4b9a0a61e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI Core\Source Files">
+      <UniqueIdentifier>{7b3f2c41-928f-48ff-b0e4-3a1479749266}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AI Core\Header Files">
+      <UniqueIdentifier>{1442e622-5405-4345-9e8d-469b68070d80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AI Core\Source Files">
+      <UniqueIdentifier>{33638bad-6577-40e4-bc5f-6e4ba0d4bae3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Core">
+      <UniqueIdentifier>{2cbc29a8-795b-46e3-b110-6e49756196f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Core\Header Files">
+      <UniqueIdentifier>{0d5acc38-19f7-42e4-adcf-5a1a891822a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Core\Source Files">
+      <UniqueIdentifier>{de9637cd-ac23-4eca-9f1e-641d87539d82}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="winmain.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics Core\GraphicsCore.cpp">
+      <Filter>Graphics Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics Core\Block.cpp">
+      <Filter>Graphics Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics Core\Chunk.cpp">
+      <Filter>Graphics Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics Core\ChunkManager.cpp">
+      <Filter>Graphics Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UI Core\CameraControl.cpp">
+      <Filter>UI Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UI Core\UICore.cpp">
+      <Filter>UI Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UI Core\UserInput.cpp">
+      <Filter>UI Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Player Core\player.cpp">
+      <Filter>Player Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Player Core\playerInventory.cpp">
+      <Filter>Player Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics Core\OpenGLRenderer.cpp">
+      <Filter>Graphics Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UI Core\FunctionList.cpp">
+      <Filter>UI Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UI Core\Function.cpp">
+      <Filter>UI Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Quaternion.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="UI Core\Button.cpp">
+      <Filter>UI Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UI Core\MainMenu.cpp">
+      <Filter>UI Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics Core\Bitmap.cpp">
+      <Filter>Graphics Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Player Core\TechManage.cpp">
+      <Filter>Player Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Player Core\Technology.cpp">
+      <Filter>Player Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics Core\LandGen.cpp">
+      <Filter>Graphics Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UI Core\GUI.cpp">
+      <Filter>UI Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Player Core\GameplayCore.cpp">
+      <Filter>Player Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Player Core\Loader.cpp">
+      <Filter>Player Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Player Core\Building.cpp">
+      <Filter>Player Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Player Core\BuildingManage.cpp">
+      <Filter>Player Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Player Core\BuildInfo.cpp">
+      <Filter>Player Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UI Core\GUI_Building.cpp">
+      <Filter>UI Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UI Core\GUI_Menu.cpp">
+      <Filter>UI Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UI Core\GUI_Resources.cpp">
+      <Filter>UI Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UI Core\GUI_Tech.cpp">
+      <Filter>UI Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AI Core\AICore.cpp">
+      <Filter>AI Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AI Core\AIEntity.cpp">
+      <Filter>AI Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AI Core\State.cpp">
+      <Filter>AI Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AI Core\StateMachine.cpp">
+      <Filter>AI Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Player Core\Room.cpp">
+      <Filter>Player Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Player Core\ResourceManager.cpp">
+      <Filter>Player Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UI Core\MessageBox.cpp">
+      <Filter>UI Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UI Core\Tutorial.cpp">
+      <Filter>UI Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Logger.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource Core\Bot.cpp">
+      <Filter>Resource Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource Core\ObjectLoader.cpp">
+      <Filter>Resource Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource Core\Mesh.cpp">
+      <Filter>Resource Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource Core\Object.cpp">
+      <Filter>Resource Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource Core\Texture.cpp">
+      <Filter>Resource Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UI Core\LoadingMenu.cpp">
+      <Filter>UI Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics Core\HashMap.cpp">
+      <Filter>Graphics Core</Filter>
+    </ClCompile>
+    <ClCompile Include="UI Core\GUI_Loading.cpp">
+      <Filter>UI Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Player Core\BuildingGraph.cpp">
+      <Filter>Player Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AI Core\BotManager.cpp">
+      <Filter>AI Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AI Core\Message.cpp">
+      <Filter>AI Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AI Core\MessageHandler.cpp">
+      <Filter>AI Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AI Core\Navmesh.cpp">
+      <Filter>AI Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AI Core\Path.cpp">
+      <Filter>AI Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AI Core\Pathfinding.cpp">
+      <Filter>AI Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics Core\Polygon.cpp">
+      <Filter>Graphics Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics Core\Polygroup.cpp">
+      <Filter>Graphics Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AI Core\ConnectionNode.cpp">
+      <Filter>AI Core</Filter>
+    </ClCompile>
+    <ClCompile Include="AI Core\ConnectionPath.cpp">
+      <Filter>AI Core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Graphics Core\GraphicsCore.h">
+      <Filter>Graphics Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics Core\Block.h">
+      <Filter>Graphics Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics Core\ChunkManager.h">
+      <Filter>Graphics Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics Core\Chunk.h">
+      <Filter>Graphics Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI Core\CameraControl.h">
+      <Filter>UI Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI Core\UserInput.h">
+      <Filter>UI Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI Core\UICore.h">
+      <Filter>UI Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Player Core\player.h">
+      <Filter>Player Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Player Core\playerInventory.h">
+      <Filter>Player Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics Core\OpenGLRenderer.h">
+      <Filter>Graphics Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI Core\FunctionList.h">
+      <Filter>UI Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI Core\Function.h">
+      <Filter>UI Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Quaternion.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="UnitAbstraction.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="UI Core\MainMenu.h">
+      <Filter>UI Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI Core\Button.h">
+      <Filter>UI Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics Core\Bitmap.h">
+      <Filter>Graphics Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Player Core\Technology.h">
+      <Filter>Player Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Player Core\TechManage.h">
+      <Filter>Player Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics Core\LandGen.h">
+      <Filter>Graphics Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI Core\GUI.h">
+      <Filter>UI Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Player Core\GameplayCore.h">
+      <Filter>Player Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Player Core\Loader.h">
+      <Filter>Player Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Player Core\Building.h">
+      <Filter>Player Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Player Core\BuildingManage.h">
+      <Filter>Player Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Player Core\BuildInfo.h">
+      <Filter>Player Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI Core\GUI_Building.h">
+      <Filter>UI Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI Core\GUI_Tech.h">
+      <Filter>UI Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI Core\GUI_Menu.h">
+      <Filter>UI Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI Core\GUI_Resources.h">
+      <Filter>UI Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AI Core\AICore.h">
+      <Filter>AI Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AI Core\AIEntity.h">
+      <Filter>AI Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AI Core\State.h">
+      <Filter>AI Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AI Core\StateMachine.h">
+      <Filter>AI Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Player Core\Room.h">
+      <Filter>Player Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Player Core\ResourceManager.h">
+      <Filter>Player Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI Core\MessageBox.h">
+      <Filter>UI Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI Core\Tutorial.h">
+      <Filter>UI Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource Core\Mesh.h">
+      <Filter>Resource Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource Core\Bot.h">
+      <Filter>Resource Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource Core\Object.h">
+      <Filter>Resource Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource Core\ObjectLoader.h">
+      <Filter>Resource Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource Core\Texture.h">
+      <Filter>Resource Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ray.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="UI Core\LoadingMenu.h">
+      <Filter>UI Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics Core\HashMap.h">
+      <Filter>Graphics Core</Filter>
+    </ClInclude>
+    <ClInclude Include="UI Core\GUI_Loading.h">
+      <Filter>UI Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Singletons.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Player Core\BuildingGraph.h">
+      <Filter>Player Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AI Core\BotManager.h">
+      <Filter>AI Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AI Core\Pathfinding.h">
+      <Filter>AI Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AI Core\Message.h">
+      <Filter>AI Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AI Core\MessageHandler.h">
+      <Filter>AI Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AI Core\MessageTypes.h">
+      <Filter>AI Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AI Core\Navmesh.h">
+      <Filter>AI Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AI Core\Path.h">
+      <Filter>AI Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics Core\Polygon.h">
+      <Filter>Graphics Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics Core\Polygroup.h">
+      <Filter>Graphics Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AI Core\ConnectionNode.h">
+      <Filter>AI Core</Filter>
+    </ClInclude>
+    <ClInclude Include="AI Core\ConnectionPath.h">
+      <Filter>AI Core</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

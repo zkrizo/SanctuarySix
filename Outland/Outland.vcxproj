@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C36F0DB2-445C-4DBB-9C6A-78D3EC8FE02C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Outland</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)\;$(IncludePath)</IncludePath>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)\;$(IncludePath)</IncludePath>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisIgnoreGeneratedCode>true</CodeAnalysisIgnoreGeneratedCode>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <DisableSpecificWarnings>4244</DisableSpecificWarnings>
+      <EnablePREfast>false</EnablePREfast>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>assimp.lib;glew32.lib;glu32.lib;opengl32.lib;SOILMT.lib;libnoise.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <Profile>true</Profile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <EnablePREfast>false</EnablePREfast>
+      <DisableSpecificWarnings>4244</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>false</OptimizeReferences>
+      <AdditionalDependencies>assimp.lib;glew32.lib;glu32.lib;opengl32.lib;SOILMT.lib;libnoise.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AI Core\AICore.cpp" />
+    <ClCompile Include="AI Core\AIEntity.cpp" />
+    <ClCompile Include="AI Core\BotManager.cpp" />
+    <ClCompile Include="AI Core\ConnectionNode.cpp" />
+    <ClCompile Include="AI Core\ConnectionPath.cpp" />
+    <ClCompile Include="AI Core\Message.cpp" />
+    <ClCompile Include="AI Core\MessageHandler.cpp" />
+    <ClCompile Include="AI Core\Navmesh.cpp" />
+    <ClCompile Include="AI Core\Path.cpp" />
+    <ClCompile Include="AI Core\Pathfinding.cpp" />
+    <ClCompile Include="AI Core\State.cpp" />
+    <ClCompile Include="AI Core\StateMachine.cpp" />
+    <ClCompile Include="Graphics Core\Bitmap.cpp" />
+    <ClCompile Include="Graphics Core\Block.cpp" />
+    <ClCompile Include="Graphics Core\Chunk.cpp" />
+    <ClCompile Include="Graphics Core\ChunkManager.cpp" />
+    <ClCompile Include="Graphics Core\GraphicsCore.cpp" />
+    <ClCompile Include="Graphics Core\HashMap.cpp" />
+    <ClCompile Include="Graphics Core\LandGen.cpp" />
+    <ClCompile Include="Graphics Core\OpenGLRenderer.cpp" />
+    <ClCompile Include="Graphics Core\Polygon.cpp" />
+    <ClCompile Include="Graphics Core\Polygroup.cpp" />
+    <ClCompile Include="Logger.cpp" />
+    <ClCompile Include="Player Core\BuildInfo.cpp" />
+    <ClCompile Include="Player Core\Building.cpp" />
+    <ClCompile Include="Player Core\BuildingGraph.cpp" />
+    <ClCompile Include="Player Core\BuildingManage.cpp" />
+    <ClCompile Include="Player Core\GameplayCore.cpp" />
+    <ClCompile Include="Player Core\Loader.cpp" />
+    <ClCompile Include="Player Core\player.cpp" />
+    <ClCompile Include="Player Core\playerInventory.cpp" />
+    <ClCompile Include="Player Core\ResourceManager.cpp" />
+    <ClCompile Include="Player Core\Room.cpp" />
+    <ClCompile Include="Player Core\TechManage.cpp" />
+    <ClCompile Include="Player Core\Technology.cpp" />
+    <ClCompile Include="Quaternion.cpp" />
+    <ClCompile Include="Resource Core\Bot.cpp" />
+    <ClCompile Include="Resource Core\Mesh.cpp" />
+    <ClCompile Include="Resource Core\Object.cpp" />
+    <ClCompile Include="Resource Core\ObjectLoader.cpp" />
+    <ClCompile Include="Resource Core\Texture.cpp" />
+    <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="UI Core\Button.cpp" />
+    <ClCompile Include="UI Core\CameraControl.cpp" />
+    <ClCompile Include="UI Core\Function.cpp" />
+    <ClCompile Include="UI Core\FunctionList.cpp" />
+    <ClCompile Include="UI Core\GUI.cpp" />
+    <ClCompile Include="UI Core\GUI_Building.cpp" />
+    <ClCompile Include="UI Core\GUI_Loading.cpp" />
+    <ClCompile Include="UI Core\GUI_Menu.cpp" />
+    <ClCompile Include="UI Core\GUI_Resources.cpp" />
+    <ClCompile Include="UI Core\GUI_Tech.cpp" />
+    <ClCompile Include="UI Core\LoadingMenu.cpp" />
+    <ClCompile Include="UI Core\MainMenu.cpp" />
+    <ClCompile Include="UI Core\MessageBox.cpp" />
+    <ClCompile Include="UI Core\Tutorial.cpp" />
+    <ClCompile Include="UI Core\UICore.cpp" />
+    <ClCompile Include="UI Core\UserInput.cpp" />
+    <ClCompile Include="winmain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AI Core\AICore.h" />
+    <ClInclude Include="AI Core\AIEntity.h" />
+    <ClInclude Include="AI Core\BotManager.h" />
+    <ClInclude Include="AI Core\ConnectionNode.h" />
+    <ClInclude Include="AI Core\ConnectionPath.h" />
+    <ClInclude Include="AI Core\Message.h" />
+    <ClInclude Include="AI Core\MessageHandler.h" />
+    <ClInclude Include="AI Core\MessageTypes.h" />
+    <ClInclude Include="AI Core\Navmesh.h" />
+    <ClInclude Include="AI Core\Path.h" />
+    <ClInclude Include="AI Core\Pathfinding.h" />
+    <ClInclude Include="AI Core\State.h" />
+    <ClInclude Include="AI Core\StateMachine.h" />
+    <ClInclude Include="Graphics Core\Bitmap.h" />
+    <ClInclude Include="Graphics Core\Block.h" />
+    <ClInclude Include="Graphics Core\Chunk.h" />
+    <ClInclude Include="Graphics Core\ChunkManager.h" />
+    <ClInclude Include="Graphics Core\GraphicsCore.h" />
+    <ClInclude Include="Graphics Core\HashMap.h" />
+    <ClInclude Include="Graphics Core\LandGen.h" />
+    <ClInclude Include="Graphics Core\OpenGLRenderer.h" />
+    <ClInclude Include="Graphics Core\Polygon.h" />
+    <ClInclude Include="Graphics Core\Polygroup.h" />
+    <ClInclude Include="Logger.h" />
+    <ClInclude Include="Player Core\BuildInfo.h" />
+    <ClInclude Include="Player Core\Building.h" />
+    <ClInclude Include="Player Core\BuildingGraph.h" />
+    <ClInclude Include="Player Core\BuildingManage.h" />
+    <ClInclude Include="Player Core\GameplayCore.h" />
+    <ClInclude Include="Player Core\Loader.h" />
+    <ClInclude Include="Player Core\player.h" />
+    <ClInclude Include="Player Core\playerInventory.h" />
+    <ClInclude Include="Player Core\ResourceManager.h" />
+    <ClInclude Include="Player Core\Room.h" />
+    <ClInclude Include="Player Core\TechManage.h" />
+    <ClInclude Include="Player Core\Technology.h" />
+    <ClInclude Include="Quaternion.h" />
+    <ClInclude Include="Ray.h" />
+    <ClInclude Include="Resource Core\Bot.h" />
+    <ClInclude Include="Resource Core\Mesh.h" />
+    <ClInclude Include="Resource Core\Object.h" />
+    <ClInclude Include="Resource Core\ObjectLoader.h" />
+    <ClInclude Include="Resource Core\Texture.h" />
+    <ClInclude Include="Singletons.h" />
+    <ClInclude Include="Timer.h" />
+    <ClInclude Include="UI Core\Button.h" />
+    <ClInclude Include="UI Core\CameraControl.h" />
+    <ClInclude Include="UI Core\Function.h" />
+    <ClInclude Include="UI Core\FunctionList.h" />
+    <ClInclude Include="UI Core\GUI.h" />
+    <ClInclude Include="UI Core\GUI_Building.h" />
+    <ClInclude Include="UI Core\GUI_Loading.h" />
+    <ClInclude Include="UI Core\GUI_Menu.h" />
+    <ClInclude Include="UI Core\GUI_Resources.h" />
+    <ClInclude Include="UI Core\GUI_Tech.h" />
+    <ClInclude Include="UI Core\LoadingMenu.h" />
+    <ClInclude Include="UI Core\MainMenu.h" />
+    <ClInclude Include="UI Core\MessageBox.h" />
+    <ClInclude Include="UI Core\Tutorial.h" />
+    <ClInclude Include="UI Core\UICore.h" />
+    <ClInclude Include="UI Core\UserInput.h" />
+    <ClInclude Include="UnitAbstraction.h" />
+    <ClInclude Include="Vector.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

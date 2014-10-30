@@ -1,0 +1,1449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+    <asset>
+        <contributor>
+            <authoring_tool>Newtek LightWave CORE v1.0</authoring_tool>
+            <comments>LWCORE_profile_version=0.1</comments>
+        </contributor>
+        <created>2013-06-06T05:35:00Z</created>
+        <modified>2013-06-06T05:35:00Z</modified>
+        <unit meter="1"/>
+        <up_axis>Y_UP</up_axis>
+    </asset>
+    <library_animations/>
+    <library_cameras/>
+    <library_lights/>
+    <library_materials>
+        <material id="Default" name="Default">
+            <instance_effect url="#Default-fx"/>
+        </material>
+        <material id="Default_1" name="Default_1">
+            <instance_effect url="#Default_1-fx"/>
+        </material>
+        <material id="Default_2" name="Default_2">
+            <instance_effect url="#Default_2-fx"/>
+        </material>
+    </library_materials>
+    <library_effects>
+        <effect id="Default-fx">
+            <profile_COMMON>
+                <technique sid="common">
+                    <lambert>
+                        <diffuse>
+                            <color sid="diffuse">0.6 0.6 0.6 0</color>
+                        </diffuse>
+                    </lambert>
+                </technique>
+            </profile_COMMON>
+            <extra>
+                <technique profile="LWCORE">
+                    <shaders>
+                        <component id="comp_Material" type="Material">
+                            <attribute sid="Name" dynamic="custom">
+                                <description>
+                                    <parameter_type value="string"/>
+                                    <is_input value="true"/>
+                                </description>
+                                <string>Default</string>
+                            </attribute>
+                            <attribute sid="Self" dynamic="custom">
+                                <description>
+                                    <parameter_type value="WeakRef"/>
+                                    <is_input value="false"/>
+                                </description>
+                            </attribute>
+                            <attribute sid="Name_1">
+                                <string></string>
+                            </attribute>
+                            <attribute sid="Double Sided">
+                                <bool>false</bool>
+                            </attribute>
+                            <attribute sid="Radiosity Transparent">
+                                <bool>false</bool>
+                            </attribute>
+                            <attribute sid="Shader">
+                                <WeakRef></WeakRef>
+                                <connected_component target_attribute="Output">
+                                    <component id="comp_LegacyLightWave" type="LegacyLightWave">
+                                        <attribute sid="Name" dynamic="custom">
+                                            <description>
+                                                <parameter_type value="string"/>
+                                                <is_input value="true"/>
+                                            </description>
+                                            <string>Legacy_LightWave</string>
+                                        </attribute>
+                                        <attribute sid="Self" dynamic="custom">
+                                            <description>
+                                                <parameter_type value="WeakRef"/>
+                                                <is_input value="false"/>
+                                            </description>
+                                        </attribute>
+                                        <attribute sid="Name_1">
+                                            <string></string>
+                                        </attribute>
+                                        <attribute sid="Color">
+                                            <float3>0.6 0.6 0.6</float3>
+                                        </attribute>
+                                        <attribute sid="Luminosity">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="Diffuse">
+                                            <float>0.78</float>
+                                        </attribute>
+                                        <attribute sid="Specularity">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="Glossiness">
+                                            <float>0.4</float>
+                                        </attribute>
+                                        <attribute sid="Reflection">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="Transparency">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RefractionIndex">
+                                            <float>1</float>
+                                        </attribute>
+                                        <attribute sid="Translucency">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="Normal">
+                                            <double3>0 0 0</double3>
+                                        </attribute>
+                                        <attribute sid="BumpHeight">
+                                            <float>1</float>
+                                        </attribute>
+                                        <attribute sid="Bump">
+                                            <double3>0 0 0</double3>
+                                        </attribute>
+                                        <attribute sid="ColorHighlights">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="ColorFilter">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="AdditiveTransparency">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="DiffuseSharpness">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="ReflectionOptions">
+                                            <int>1</int>
+                                        </attribute>
+                                        <attribute sid="ReflectionMap">
+                                            <WeakRef></WeakRef>
+                                        </attribute>
+                                        <attribute sid="ReflectionImageSeamAngle">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="ReflectionBlurring">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="ReflectionSamples">
+                                            <int>8</int>
+                                        </attribute>
+                                        <attribute sid="RefractionOptions">
+                                            <int>1</int>
+                                        </attribute>
+                                        <attribute sid="RefractionMap">
+                                            <WeakRef></WeakRef>
+                                        </attribute>
+                                        <attribute sid="RefractionImageSeamAngle">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RefractionBlurring">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RefractionSamples">
+                                            <int>8</int>
+                                        </attribute>
+                                        <attribute sid="LWSURFChunk">
+                                            <string></string>
+                                        </attribute>
+                                    </component>
+                                </connected_component>
+                            </attribute>
+                            <children>
+                                <component_ref target="comp_LegacyLightWave"/>
+                            </children>
+                        </component>
+                    </shaders>
+                </technique>
+            </extra>
+        </effect>
+        <effect id="Default_1-fx">
+            <profile_COMMON>
+                <technique sid="common">
+                    <lambert>
+                        <diffuse>
+                            <color sid="diffuse">0.784314 0.784314 0.784314 0</color>
+                        </diffuse>
+                    </lambert>
+                </technique>
+            </profile_COMMON>
+            <extra>
+                <technique profile="LWCORE">
+                    <shaders>
+                        <component id="comp_Material_2" type="Material">
+                            <attribute sid="Name" dynamic="custom">
+                                <description>
+                                    <parameter_type value="string"/>
+                                    <is_input value="true"/>
+                                </description>
+                                <string>Default_1</string>
+                            </attribute>
+                            <attribute sid="Self" dynamic="custom">
+                                <description>
+                                    <parameter_type value="WeakRef"/>
+                                    <is_input value="false"/>
+                                </description>
+                            </attribute>
+                            <attribute sid="Name_1">
+                                <string></string>
+                            </attribute>
+                            <attribute sid="Double Sided">
+                                <bool>false</bool>
+                            </attribute>
+                            <attribute sid="Radiosity Transparent">
+                                <bool>false</bool>
+                            </attribute>
+                            <attribute sid="Shader">
+                                <WeakRef></WeakRef>
+                                <connected_component target_attribute="Output">
+                                    <component id="comp_LegacyLightWave_2" type="LegacyLightWave">
+                                        <attribute sid="Name" dynamic="custom">
+                                            <description>
+                                                <parameter_type value="string"/>
+                                                <is_input value="true"/>
+                                            </description>
+                                            <string>Legacy_LightWave_1</string>
+                                        </attribute>
+                                        <attribute sid="Self" dynamic="custom">
+                                            <description>
+                                                <parameter_type value="WeakRef"/>
+                                                <is_input value="false"/>
+                                            </description>
+                                        </attribute>
+                                        <attribute sid="Name_1">
+                                            <string></string>
+                                        </attribute>
+                                        <attribute sid="Color">
+                                            <float3>0.784314 0.784314 0.784314</float3>
+                                        </attribute>
+                                        <attribute sid="Luminosity">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="Diffuse">
+                                            <float>0.78</float>
+                                        </attribute>
+                                        <attribute sid="Specularity">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="Glossiness">
+                                            <float>0.4</float>
+                                        </attribute>
+                                        <attribute sid="Reflection">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="Transparency">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RefractionIndex">
+                                            <float>1</float>
+                                        </attribute>
+                                        <attribute sid="Translucency">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="Normal">
+                                            <double3>0 0 0</double3>
+                                        </attribute>
+                                        <attribute sid="BumpHeight">
+                                            <float>1</float>
+                                        </attribute>
+                                        <attribute sid="Bump">
+                                            <double3>1 1 1</double3>
+                                        </attribute>
+                                        <attribute sid="ColorHighlights">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="ColorFilter">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="AdditiveTransparency">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="DiffuseSharpness">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="ReflectionOptions">
+                                            <int>1</int>
+                                        </attribute>
+                                        <attribute sid="ReflectionMap">
+                                            <WeakRef></WeakRef>
+                                        </attribute>
+                                        <attribute sid="ReflectionImageSeamAngle">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="ReflectionBlurring">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="ReflectionSamples">
+                                            <int>8</int>
+                                        </attribute>
+                                        <attribute sid="RefractionOptions">
+                                            <int>1</int>
+                                        </attribute>
+                                        <attribute sid="RefractionMap">
+                                            <WeakRef></WeakRef>
+                                        </attribute>
+                                        <attribute sid="RefractionImageSeamAngle">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RefractionBlurring">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RefractionSamples">
+                                            <int>8</int>
+                                        </attribute>
+                                        <attribute sid="LWSURFChunk">
+                                            <string></string>
+                                        </attribute>
+                                    </component>
+                                </connected_component>
+                            </attribute>
+                            <children>
+                                <component_ref target="comp_LegacyLightWave_2"/>
+                            </children>
+                        </component>
+                    </shaders>
+                </technique>
+            </extra>
+        </effect>
+        <effect id="Default_3-fx">
+            <profile_COMMON>
+                <technique sid="common">
+                    <lambert>
+                        <diffuse>
+                            <color sid="diffuse">0.784314 0.784314 0.784314 0</color>
+                        </diffuse>
+                    </lambert>
+                </technique>
+            </profile_COMMON>
+            <extra>
+                <technique profile="LWCORE">
+                    <shaders>
+                        <component id="comp_Material_3" type="Material">
+                            <attribute sid="Name" dynamic="custom">
+                                <description>
+                                    <parameter_type value="string"/>
+                                    <is_input value="true"/>
+                                </description>
+                                <string>Default_3</string>
+                            </attribute>
+                            <attribute sid="Self" dynamic="custom">
+                                <description>
+                                    <parameter_type value="WeakRef"/>
+                                    <is_input value="false"/>
+                                </description>
+                            </attribute>
+                            <attribute sid="Name_1">
+                                <string></string>
+                            </attribute>
+                            <attribute sid="Double Sided">
+                                <bool>false</bool>
+                            </attribute>
+                            <attribute sid="Radiosity Transparent">
+                                <bool>false</bool>
+                            </attribute>
+                            <attribute sid="Shader">
+                                <WeakRef></WeakRef>
+                                <connected_component target_attribute="Output">
+                                    <component id="comp_LegacyLightWave_3" type="LegacyLightWave">
+                                        <attribute sid="Name" dynamic="custom">
+                                            <description>
+                                                <parameter_type value="string"/>
+                                                <is_input value="true"/>
+                                            </description>
+                                            <string>Legacy_LightWave_3</string>
+                                        </attribute>
+                                        <attribute sid="Self" dynamic="custom">
+                                            <description>
+                                                <parameter_type value="WeakRef"/>
+                                                <is_input value="false"/>
+                                            </description>
+                                        </attribute>
+                                        <attribute sid="Name_1">
+                                            <string></string>
+                                        </attribute>
+                                        <attribute sid="Color">
+                                            <float3>0.784314 0.784314 0.784314</float3>
+                                        </attribute>
+                                        <attribute sid="Luminosity">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="Diffuse">
+                                            <float>0.78</float>
+                                        </attribute>
+                                        <attribute sid="Specularity">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="Glossiness">
+                                            <float>0.4</float>
+                                        </attribute>
+                                        <attribute sid="Reflection">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="Transparency">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RefractionIndex">
+                                            <float>1</float>
+                                        </attribute>
+                                        <attribute sid="Translucency">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="Normal">
+                                            <double3>0 0 0</double3>
+                                        </attribute>
+                                        <attribute sid="BumpHeight">
+                                            <float>1</float>
+                                        </attribute>
+                                        <attribute sid="Bump">
+                                            <double3>1 1 1</double3>
+                                        </attribute>
+                                        <attribute sid="ColorHighlights">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="ColorFilter">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="AdditiveTransparency">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="DiffuseSharpness">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="ReflectionOptions">
+                                            <int>1</int>
+                                        </attribute>
+                                        <attribute sid="ReflectionMap">
+                                            <WeakRef></WeakRef>
+                                        </attribute>
+                                        <attribute sid="ReflectionImageSeamAngle">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="ReflectionBlurring">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="ReflectionSamples">
+                                            <int>8</int>
+                                        </attribute>
+                                        <attribute sid="RefractionOptions">
+                                            <int>1</int>
+                                        </attribute>
+                                        <attribute sid="RefractionMap">
+                                            <WeakRef></WeakRef>
+                                        </attribute>
+                                        <attribute sid="RefractionImageSeamAngle">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RefractionBlurring">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RefractionSamples">
+                                            <int>8</int>
+                                        </attribute>
+                                        <attribute sid="LWSURFChunk">
+                                            <string></string>
+                                        </attribute>
+                                    </component>
+                                </connected_component>
+                            </attribute>
+                            <children>
+                                <component_ref target="comp_LegacyLightWave_3"/>
+                            </children>
+                        </component>
+                    </shaders>
+                </technique>
+            </extra>
+        </effect>
+        <effect id="Default_2-fx">
+            <profile_COMMON>
+                <technique sid="common">
+                    <lambert>
+                        <diffuse>
+                            <color sid="diffuse">0.784314 0.784314 0.784314 0</color>
+                        </diffuse>
+                    </lambert>
+                </technique>
+            </profile_COMMON>
+            <extra>
+                <technique profile="LWCORE">
+                    <shaders>
+                        <component id="comp_Material_4" type="Material">
+                            <attribute sid="Name" dynamic="custom">
+                                <description>
+                                    <parameter_type value="string"/>
+                                    <is_input value="true"/>
+                                </description>
+                                <string>Default_2</string>
+                            </attribute>
+                            <attribute sid="Self" dynamic="custom">
+                                <description>
+                                    <parameter_type value="WeakRef"/>
+                                    <is_input value="false"/>
+                                </description>
+                            </attribute>
+                            <attribute sid="Name_1">
+                                <string></string>
+                            </attribute>
+                            <attribute sid="Double Sided">
+                                <bool>false</bool>
+                            </attribute>
+                            <attribute sid="Radiosity Transparent">
+                                <bool>false</bool>
+                            </attribute>
+                            <attribute sid="Shader">
+                                <WeakRef></WeakRef>
+                                <connected_component target_attribute="Output">
+                                    <component id="comp_LegacyLightWave_4" type="LegacyLightWave">
+                                        <attribute sid="Name" dynamic="custom">
+                                            <description>
+                                                <parameter_type value="string"/>
+                                                <is_input value="true"/>
+                                            </description>
+                                            <string>Legacy_LightWave_2</string>
+                                        </attribute>
+                                        <attribute sid="Self" dynamic="custom">
+                                            <description>
+                                                <parameter_type value="WeakRef"/>
+                                                <is_input value="false"/>
+                                            </description>
+                                        </attribute>
+                                        <attribute sid="Name_1">
+                                            <string></string>
+                                        </attribute>
+                                        <attribute sid="Color">
+                                            <float3>0.784314 0.784314 0.784314</float3>
+                                        </attribute>
+                                        <attribute sid="Luminosity">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="Diffuse">
+                                            <float>0.78</float>
+                                        </attribute>
+                                        <attribute sid="Specularity">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="Glossiness">
+                                            <float>0.4</float>
+                                        </attribute>
+                                        <attribute sid="Reflection">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="Transparency">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RefractionIndex">
+                                            <float>1</float>
+                                        </attribute>
+                                        <attribute sid="Translucency">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="Normal">
+                                            <double3>0 0 0</double3>
+                                        </attribute>
+                                        <attribute sid="BumpHeight">
+                                            <float>1</float>
+                                        </attribute>
+                                        <attribute sid="Bump">
+                                            <double3>1 1 1</double3>
+                                        </attribute>
+                                        <attribute sid="ColorHighlights">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="ColorFilter">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="AdditiveTransparency">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="DiffuseSharpness">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="ReflectionOptions">
+                                            <int>1</int>
+                                        </attribute>
+                                        <attribute sid="ReflectionMap">
+                                            <WeakRef></WeakRef>
+                                        </attribute>
+                                        <attribute sid="ReflectionImageSeamAngle">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="ReflectionBlurring">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="ReflectionSamples">
+                                            <int>8</int>
+                                        </attribute>
+                                        <attribute sid="RefractionOptions">
+                                            <int>1</int>
+                                        </attribute>
+                                        <attribute sid="RefractionMap">
+                                            <WeakRef></WeakRef>
+                                        </attribute>
+                                        <attribute sid="RefractionImageSeamAngle">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RefractionBlurring">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RefractionSamples">
+                                            <int>8</int>
+                                        </attribute>
+                                        <attribute sid="LWSURFChunk">
+                                            <string></string>
+                                        </attribute>
+                                    </component>
+                                </connected_component>
+                            </attribute>
+                            <children>
+                                <component_ref target="comp_LegacyLightWave_4"/>
+                            </children>
+                        </component>
+                    </shaders>
+                </technique>
+            </extra>
+        </effect>
+    </library_effects>
+    <library_geometries>
+        <geometry id="Polygonal_Geometry_lib" name="">
+            <mesh>
+                <source id="Polygonal_Geometry_positions" name="position">
+                    <float_array id="Polygonal_Geometry_positions_array" count="1200">-0.255 0.36 0.34 -0.1275 0.36 0.34 1.49012e-08 0.36 0.34 0.1275 0.36 0.34 0.255 0.36 0.34 1.49012e-08 -0.14 0.34 -0.255 0.36 0.204 -0.1275 0.36 0.204 1.49012e-08 0.36 0.204 0.1275 0.36 0.204 0.255 0.36 0.204 1.49012e-08 -0.14 0.204 -0.255 0.36 0.068 -0.1275 0.36 0.068 1.49012e-08 0.36 0.068 0.1275 0.36 0.068 0.255 0.36 0.068 1.49012e-08 -0.14 0.068 -0.255 0.36 -0.068 -0.1275 0.36 -0.068 1.49012e-08 0.36 -0.068 0.1275 0.36 -0.068 0.255 0.36 -0.068 1.49012e-08 -0.14 -0.068 -0.255 0.36 -0.204 -0.1275 0.36 -0.204 1.49012e-08 0.36 -0.204 0.1275 0.36 -0.204 0.255 0.36 -0.204 1.49012e-08 -0.14 -0.204 -0.255 0.36 -0.34 -0.1275 0.36 -0.34 1.49012e-08 0.36 -0.34 0.1275 0.36 -0.34 0.255 0.36 -0.34 1.49012e-08 -0.14 -0.34 -0.3 0.26 0.4 -0.3 0.26 0.24 -0.3 0.26 0.08 -0.3 0.26 -0.08 -0.3 0.26 -0.24 -0.3 0.26 -0.4 -0.15 0.26 0.4 -0.15 0.26 -0.4 1.49012e-08 0.26 0.4 1.49012e-08 0.26 -0.4 0.15 0.26 0.4 0.15 0.26 -0.4 0.3 0.26 0.4 0.3 0.26 -0.4 
+0.3 0.26 0.24 0.3 0.26 0.08 0.3 0.26 -0.08 0.3 0.26 -0.24 -0.3 -0.0399999 0.24 -0.3 -0.0399999 0.4 -0.3 -0.0399999 0.08 -0.3 -0.0399999 -0.08 -0.3 -0.0399999 -0.24 -0.3 -0.0399999 -0.4 -0.15 -0.0399999 0.4 -0.15 -0.0399999 -0.4 1.49012e-08 -0.0399999 0.4 1.49012e-08 -0.0399999 -0.4 0.15 -0.0399999 0.4 0.15 -0.0399999 -0.4 0.3 -0.0399999 0.4 0.3 -0.0399999 -0.4 0.3 -0.0399999 0.24 0.3 -0.0399999 0.08 0.3 -0.0399999 -0.08 0.3 -0.0399999 -0.24 -0.24225 -0.17 0.3128 -0.14025 -0.17 0.3128 -0.14025 -0.17 0.204 -0.24225 -0.17 0.204 -0.14025 -0.17 0.0952 -0.24225 -0.17 0.0952 -0.24225 -0.17 -0.0952 -0.14025 -0.17 -0.0952 -0.14025 -0.17 -0.204 -0.24225 -0.17 -0.204 -0.14025 -0.17 -0.3128 -0.24225 -0.17 -0.3128 -0.34225 -0.34 0.3128 -0.24025 -0.34 0.3128 -0.24025 -0.34 0.204 -0.34225 -0.34 0.204 -0.24025 -0.34 0.0952 -0.34225 -0.34 0.0952 -0.34225 -0.34 -0.0952 -0.24025 -0.34 -0.0952 -0.24025 -0.34 -0.204 -0.34225 -0.34 -0.204 -0.24025 -0.34 -0.3128 -0.34225 -0.34 -0.3128 -0.355 -0.36 0.34 -0.2375 -0.36 0.34 -0.2375 -0.36 0.204 -0.355 -0.36 0.204 
+-0.2375 -0.36 0.068 -0.355 -0.36 0.068 -0.355 -0.36 -0.068 -0.2375 -0.36 -0.068 -0.2375 -0.36 -0.204 -0.355 -0.36 -0.204 -0.2375 -0.36 -0.34 -0.355 -0.36 -0.34 -0.355 -0.48 0.34 -0.2375 -0.48 0.34 -0.2375 -0.48 0.204 -0.355 -0.48 0.204 -0.2375 -0.48 0.068 -0.355 -0.48 0.068 -0.355 -0.48 -0.068 -0.2375 -0.48 -0.068 -0.2375 -0.48 -0.204 -0.355 -0.48 -0.204 -0.2375 -0.48 -0.34 -0.355 -0.48 -0.34 -0.365 -0.48 0.34 -0.365 -0.48 0.204 -0.365 -0.36 0.204 -0.365 -0.36 0.34 -0.365 -0.48 0.068 -0.365 -0.36 0.068 -0.365 -0.48 -0.068 -0.365 -0.48 -0.204 -0.365 -0.36 -0.204 -0.365 -0.36 -0.068 -0.365 -0.48 -0.34 -0.365 -0.36 -0.34 -0.435 -0.48 0.34 -0.435 -0.48 0.204 -0.435 -0.36 0.204 -0.435 -0.36 0.34 -0.435 -0.48 0.068 -0.435 -0.36 0.068 -0.435 -0.48 -0.068 -0.435 -0.48 -0.204 -0.435 -0.36 -0.204 -0.435 -0.36 -0.068 -0.435 -0.48 -0.34 -0.435 -0.36 -0.34 -0.425 -0.498 0.357 -0.365 -0.498 0.357 -0.365 -0.498 0.2142 -0.425 -0.498 0.2142 -0.425 -0.342 0.357 -0.425 -0.342 0.2142 
+-0.365 -0.342 0.2142 -0.365 -0.342 0.357 -0.365 -0.498 0.0714 -0.425 -0.498 0.0714 -0.425 -0.342 0.0714 -0.365 -0.342 0.0714 -0.425 -0.498 -0.0714 -0.365 -0.498 -0.0714 -0.365 -0.498 -0.2142 -0.425 -0.498 -0.2142 -0.425 -0.342 -0.0714 -0.425 -0.342 -0.2142 -0.365 -0.342 -0.2142 -0.365 -0.342 -0.0714 -0.365 -0.498 -0.357 -0.425 -0.498 -0.357 -0.365 -0.342 -0.357 -0.425 -0.342 -0.357 -0.365 -0.462 0.4046 -0.355 -0.462 0.4046 -0.365 -0.378 0.4046 -0.355 -0.378 0.4046 -0.2375 -0.462 0.4046 -0.2375 -0.378 0.4046 -0.2375 -0.462 0.204 -0.2375 -0.378 0.204 -0.2375 -0.462 0.068 -0.2375 -0.378 0.068 -0.2375 -0.462 -0.068 -0.2375 -0.378 -0.068 -0.2375 -0.462 -0.204 -0.2375 -0.378 -0.204 -0.2375 -0.462 -0.4046 -0.2375 -0.378 -0.4046 -0.355 -0.462 -0.4046 -0.355 -0.378 -0.4046 -0.365 -0.462 -0.4046 -0.365 -0.378 -0.4046 -0.365 -0.4746 -0.42483 -0.365 -0.3654 -0.42483 -0.425 -0.4746 -0.42483 -0.425 -0.3654 -0.42483 -0.435 -0.462 -0.4046 -0.435 -0.378 -0.4046 -0.435 -0.462 0.4046 -0.435 -0.378 0.4046 -0.425 -0.4746 0.42483 -0.425 -0.3654 0.42483 -0.365 -0.4746 0.42483 -0.365 -0.3654 0.42483 
+-0.415 -0.48 -0.34 -0.415 -0.462 -0.4046 -0.415 -0.462 -0.204 -0.415 -0.48 -0.204 -0.415 -0.378 -0.4046 -0.415 -0.378 -0.204 -0.415 -0.36 -0.34 -0.415 -0.36 -0.204 -0.415 -0.462 -0.068 -0.415 -0.48 -0.068 -0.415 -0.378 -0.068 -0.415 -0.36 -0.068 -0.415 -0.462 0.068 -0.415 -0.48 0.068 -0.415 -0.378 0.068 -0.415 -0.36 0.068 -0.415 -0.462 0.204 -0.415 -0.48 0.204 -0.415 -0.378 0.204 -0.415 -0.36 0.204 -0.415 -0.462 0.4046 -0.415 -0.48 0.34 -0.415 -0.378 0.4046 -0.415 -0.36 0.34 0.24225 -0.17 0.3128 0.14025 -0.17 0.3128 0.14025 -0.17 0.204 0.24225 -0.17 0.204 0.14025 -0.17 0.0952 0.24225 -0.17 0.0952 0.24225 -0.17 -0.0952 0.14025 -0.17 -0.0952 0.14025 -0.17 -0.204 0.24225 -0.17 -0.204 0.14025 -0.17 -0.3128 0.24225 -0.17 -0.3128 0.34225 -0.34 0.3128 0.24025 -0.34 0.3128 0.24025 -0.34 0.204 0.34225 -0.34 0.204 0.24025 -0.34 0.0952 0.34225 -0.34 0.0952 0.34225 -0.34 -0.0952 0.24025 -0.34 -0.0952 0.24025 -0.34 -0.204 0.34225 -0.34 -0.204 0.24025 -0.34 -0.3128 0.34225 -0.34 -0.3128 0.355 -0.36 0.34 0.2375 -0.36 0.34 
+0.2375 -0.36 0.204 0.355 -0.36 0.204 0.2375 -0.36 0.068 0.355 -0.36 0.068 0.355 -0.36 -0.068 0.2375 -0.36 -0.068 0.2375 -0.36 -0.204 0.355 -0.36 -0.204 0.2375 -0.36 -0.34 0.355 -0.36 -0.34 0.355 -0.48 0.34 0.2375 -0.48 0.34 0.2375 -0.48 0.204 0.355 -0.48 0.204 0.2375 -0.48 0.068 0.355 -0.48 0.068 0.355 -0.48 -0.068 0.2375 -0.48 -0.068 0.2375 -0.48 -0.204 0.355 -0.48 -0.204 0.2375 -0.48 -0.34 0.355 -0.48 -0.34 0.365 -0.48 0.34 0.365 -0.48 0.204 0.365 -0.36 0.204 0.365 -0.36 0.34 0.365 -0.48 0.068 0.365 -0.36 0.068 0.365 -0.48 -0.068 0.365 -0.48 -0.204 0.365 -0.36 -0.204 0.365 -0.36 -0.068 0.365 -0.48 -0.34 0.365 -0.36 -0.34 0.435 -0.48 0.34 0.435 -0.48 0.204 0.435 -0.36 0.204 0.435 -0.36 0.34 0.435 -0.48 0.068 0.435 -0.36 0.068 0.435 -0.48 -0.068 0.435 -0.48 -0.204 0.435 -0.36 -0.204 0.435 -0.36 -0.068 0.435 -0.48 -0.34 0.435 -0.36 -0.34 0.425 -0.498 0.357 0.365 -0.498 0.357 0.365 -0.498 0.2142 0.425 -0.498 0.2142 
+0.425 -0.342 0.357 0.425 -0.342 0.2142 0.365 -0.342 0.2142 0.365 -0.342 0.357 0.365 -0.498 0.0714 0.425 -0.498 0.0714 0.425 -0.342 0.0714 0.365 -0.342 0.0714 0.425 -0.498 -0.0714 0.365 -0.498 -0.0714 0.365 -0.498 -0.2142 0.425 -0.498 -0.2142 0.425 -0.342 -0.0714 0.425 -0.342 -0.2142 0.365 -0.342 -0.2142 0.365 -0.342 -0.0714 0.365 -0.498 -0.357 0.425 -0.498 -0.357 0.365 -0.342 -0.357 0.425 -0.342 -0.357 0.365 -0.462 0.4046 0.355 -0.462 0.4046 0.365 -0.378 0.4046 0.355 -0.378 0.4046 0.2375 -0.462 0.4046 0.2375 -0.378 0.4046 0.2375 -0.462 0.204 0.2375 -0.378 0.204 0.2375 -0.462 0.068 0.2375 -0.378 0.068 0.2375 -0.462 -0.068 0.2375 -0.378 -0.068 0.2375 -0.462 -0.204 0.2375 -0.378 -0.204 0.2375 -0.462 -0.4046 0.2375 -0.378 -0.4046 0.355 -0.462 -0.4046 0.355 -0.378 -0.4046 0.365 -0.462 -0.4046 0.365 -0.378 -0.4046 0.365 -0.4746 -0.42483 0.365 -0.3654 -0.42483 0.425 -0.4746 -0.42483 0.425 -0.3654 -0.42483 0.435 -0.462 -0.4046 0.435 -0.378 -0.4046 0.435 -0.462 0.4046 0.435 -0.378 0.4046 0.425 -0.4746 0.42483 0.425 -0.3654 0.42483 
+0.365 -0.4746 0.42483 0.365 -0.3654 0.42483 0.415 -0.48 -0.34 0.415 -0.462 -0.4046 0.415 -0.462 -0.204 0.415 -0.48 -0.204 0.415 -0.378 -0.4046 0.415 -0.378 -0.204 0.415 -0.36 -0.34 0.415 -0.36 -0.204 0.415 -0.462 -0.068 0.415 -0.48 -0.068 0.415 -0.378 -0.068 0.415 -0.36 -0.068 0.415 -0.462 0.068 0.415 -0.48 0.068 0.415 -0.378 0.068 0.415 -0.36 0.068 0.415 -0.462 0.204 0.415 -0.48 0.204 0.415 -0.378 0.204 0.415 -0.36 0.204 0.415 -0.462 0.4046 0.415 -0.48 0.34 0.415 -0.378 0.4046 0.415 -0.36 0.34 0.255 -0.14 -0.34 0.1275 -0.14 -0.34 -0.1275 -0.14 -0.34 -0.255 -0.14 -0.34 0.255 -0.14 -0.204 0.255 -0.14 -0.068 0.1275 -0.14 -0.204 0.1275 -0.14 -0.068 -0.1275 -0.14 -0.204 -0.1275 -0.14 -0.068 -0.255 -0.14 -0.204 -0.255 -0.14 -0.068 0.255 -0.14 0.068 0.255 -0.14 0.204 0.1275 -0.14 0.068 0.1275 -0.14 0.204 -0.1275 -0.14 0.068 -0.1275 -0.14 0.204 -0.255 -0.14 0.068 -0.255 -0.14 0.204 0.255 -0.14 0.34 0.1275 -0.14 0.34 -0.1275 -0.14 0.34 -0.255 -0.14 0.34 
+</float_array>
+                    <technique_common>
+                        <accessor count="400" offset="0" source="#Polygonal_Geometry_positions_array" stride="3">
+                            <param name="X" type="float"/>
+                            <param name="Y" type="float"/>
+                            <param name="Z" type="float"/>
+                        </accessor>
+                    </technique_common>
+                </source>
+                <vertices id="Polygonal_Geometry_vertices">
+                    <input semantic="POSITION" source="#Polygonal_Geometry_positions"/>
+                </vertices>
+                <polylist count="802" material="Default_1">
+                    <input offset="0" semantic="VERTEX" source="#Polygonal_Geometry_vertices"/>
+                    <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 </vcount>
+                    <p>375 347 374 375 287 347 371 287 375 371 286 287 374 346 372 374 347 346 284 369 373 285 369 284 372 284 373 372 346 284 367 286 371 367 289 286 285 365 369 288 365 285 363 289 367 363 293 289 288 361 365 290 361 288 359 293 363 359 292 293 290 355 361 291 355 290 358 292 359 358 295 292 345 358 356 295 358 345 344 356 353 345 356 344 291 352 355 294 352 291 294 353 352 344 353 294 351 303 322 303 275 322 351 320 350 351 322 320 320 272 297 350 320 297 349 303 351 300 303 349 348 349 350 349 351 350 296 348 297 348 350 297 300 349 347 287 300 347 346 347 348 347 349 348 284 346 296 346 348 296 
+370 375 374 371 375 370 368 370 372 370 374 372 369 368 373 368 372 373 366 367 370 367 371 370 364 366 368 366 370 368 365 364 369 364 368 369 362 363 366 363 367 366 360 362 364 362 366 364 361 360 365 360 364 365 357 359 362 359 363 362 354 357 360 357 362 360 355 354 361 354 360 361 356 358 357 358 359 357 353 356 354 356 357 354 352 354 355 353 354 352 343 319 345 319 295 345 343 344 342 343 345 344 344 294 317 342 344 317 318 343 341 318 319 343 341 342 340 341 343 342 342 317 316 340 342 316 318 341 339 283 318 339 338 339 340 339 341 340 282 338 316 338 340 316 259 339 337 259 283 339 
+337 338 336 337 339 338 338 282 271 336 338 271 258 337 335 258 259 337 335 336 334 335 337 336 336 271 270 334 336 270 258 335 333 256 258 333 333 334 332 333 335 334 332 270 268 332 334 270 255 333 331 255 256 333 331 332 330 331 333 332 330 268 267 330 332 268 252 331 329 252 255 331 329 330 328 329 331 330 328 267 264 328 330 267 250 329 327 250 252 329 327 328 326 327 329 328 326 264 262 326 328 264 249 327 325 249 250 327 325 326 324 325 327 326 326 262 261 324 326 261 323 249 325 248 249 323 321 323 324 323 325 324 260 321 261 321 324 261 322 248 323 275 248 322 320 322 321 322 323 321 
+272 320 260 320 321 260 307 281 277 307 315 281 312 306 293 293 306 289 290 288 305 308 290 305 278 309 304 276 278 304 314 283 280 314 318 283 319 313 295 295 313 292 294 291 311 317 294 311 282 316 310 279 282 310 315 280 281 315 314 280 313 312 292 292 312 293 291 290 308 311 291 308 279 310 309 278 279 309 302 307 274 307 277 274 306 301 286 289 306 286 305 285 299 288 285 305 273 304 298 273 276 304 303 302 275 302 274 275 301 300 287 286 301 287 299 284 296 285 284 299 272 298 297 272 273 298 306 312 307 312 315 307 308 305 304 309 308 304 313 319 314 319 318 314 317 311 310 316 317 310 
+312 313 315 313 314 315 311 308 309 310 311 309 301 306 302 306 307 302 305 299 298 304 305 298 300 301 303 301 302 303 299 296 297 298 299 297 277 281 253 281 254 253 278 276 265 266 278 265 280 283 257 283 259 257 282 279 269 271 282 269 281 280 254 280 257 254 279 278 266 269 279 266 274 277 251 277 253 251 276 273 263 265 276 263 275 274 248 274 251 248 273 272 260 263 273 260 254 255 253 253 255 252 266 265 264 267 266 264 247 245 257 259 247 257 247 259 258 246 247 258 246 258 256 244 246 256 257 242 254 245 242 257 243 256 255 243 244 256 242 243 255 254 242 255 241 239 251 253 241 251 
+241 253 252 240 241 252 240 252 250 238 240 250 251 236 248 239 236 251 237 250 249 237 238 250 236 237 249 248 236 249 247 233 245 235 233 247 235 247 246 234 235 246 232 246 244 232 234 246 245 230 242 233 230 245 231 244 243 231 232 244 230 231 243 242 230 243 241 227 239 229 227 241 229 241 240 228 229 240 226 240 238 226 228 240 239 224 236 227 224 239 225 238 237 225 226 238 224 225 237 236 224 237 235 380 233 376 380 235 377 235 234 377 376 235 382 234 232 382 377 234 380 381 230 233 380 230 382 232 231 383 382 231 230 383 231 381 383 230 229 389 227 388 389 229 390 229 228 390 388 229 
+391 228 226 391 390 228 389 396 224 227 389 224 391 226 225 397 391 225 224 397 225 396 397 224 271 269 268 270 271 268 269 266 267 268 269 267 381 388 390 383 381 390 265 263 262 264 265 262 263 260 261 262 263 261 195 223 222 135 223 195 135 219 223 134 219 135 194 222 220 195 222 194 217 132 221 217 133 132 132 220 221 194 220 132 134 215 219 137 215 134 213 133 217 213 136 133 137 211 215 141 211 137 209 136 213 209 138 136 141 207 211 140 207 141 203 138 209 203 139 138 140 206 207 143 206 140 206 193 204 206 143 193 204 192 201 204 193 192 200 139 203 200 142 139 201 142 200 201 192 142 
+151 199 170 123 151 170 168 199 198 170 199 168 168 198 145 120 168 145 151 148 197 151 197 199 197 196 198 199 197 198 196 144 145 198 196 145 148 135 195 197 148 195 195 194 196 197 195 196 194 132 144 196 194 144 223 219 218 223 218 222 218 216 220 222 218 220 216 217 221 220 216 221 215 214 218 219 215 218 214 212 216 218 214 216 212 213 217 216 212 217 211 210 214 215 211 214 210 208 212 214 210 212 208 209 213 212 208 213 207 205 210 211 207 210 205 202 208 210 205 208 202 203 209 208 202 209 206 204 205 207 206 205 204 201 202 205 204 202 202 201 200 202 200 203 167 191 193 143 167 193 
+192 191 190 193 191 192 192 190 165 142 192 165 191 166 189 167 166 191 190 189 188 191 189 190 190 188 164 165 190 164 166 131 187 189 166 187 187 186 188 189 187 188 186 130 164 188 186 164 187 107 185 131 107 187 186 185 184 187 185 186 186 184 119 130 186 119 185 106 183 107 106 185 184 183 182 185 183 184 184 182 118 119 184 118 106 104 181 183 106 181 182 181 180 183 181 182 118 180 116 182 180 118 181 103 179 104 103 181 180 179 178 181 179 180 116 178 115 180 178 116 179 100 177 103 100 179 178 177 176 179 177 178 115 176 112 178 176 115 177 98 175 100 98 177 176 175 174 177 175 176 
+112 174 110 176 174 112 175 97 173 98 97 175 174 173 172 175 173 174 174 172 109 110 174 109 97 96 171 97 171 173 171 169 172 173 171 172 169 108 109 172 169 109 96 123 170 96 170 171 170 168 169 171 170 169 168 120 108 169 168 108 163 155 129 129 155 125 154 141 137 154 160 141 138 156 153 136 138 153 126 124 152 157 126 152 166 162 131 131 162 128 161 143 140 161 167 143 142 165 159 139 142 159 130 127 158 164 130 158 162 163 128 128 163 129 160 140 141 160 161 140 139 159 156 138 139 156 127 126 157 158 127 157 155 150 122 125 155 122 149 154 134 154 137 134 133 153 147 133 136 153 
+152 121 146 124 121 152 150 151 123 122 150 123 148 149 135 149 134 135 132 147 144 132 133 147 146 120 145 121 120 146 160 154 155 163 160 155 153 156 152 156 157 152 167 161 162 166 167 162 159 165 158 165 164 158 161 160 163 162 161 163 156 159 157 159 158 157 154 149 150 155 154 150 147 153 146 153 152 146 149 148 151 150 149 151 144 147 145 147 146 145 129 125 101 102 129 101 124 126 113 126 114 113 131 128 105 107 131 105 127 130 117 130 119 117 128 129 102 105 128 102 126 127 114 127 117 114 125 122 99 101 125 99 121 124 111 124 113 111 122 123 96 99 122 96 120 121 108 121 111 108 
+103 102 101 103 101 100 113 114 112 114 115 112 95 107 105 93 95 105 95 94 106 107 95 106 94 92 104 106 94 104 90 105 102 90 93 105 104 91 103 92 91 104 90 102 103 91 90 103 89 101 99 87 89 99 89 88 100 101 89 100 88 86 98 100 88 98 84 99 96 84 87 99 98 85 97 86 85 98 84 96 97 85 84 97 81 95 93 81 83 95 83 82 94 95 83 94 94 80 92 82 80 94 78 93 90 78 81 93 92 79 91 80 79 92 78 90 91 79 78 91 75 89 87 75 77 89 77 76 88 89 77 88 88 74 86 76 74 88 72 87 84 72 75 87 86 73 85 74 73 86 
+72 84 85 73 72 85 386 83 81 386 379 83 83 378 82 379 378 83 82 384 80 378 384 82 386 81 78 387 386 78 384 385 79 80 384 79 385 78 79 385 387 78 395 77 75 395 394 77 77 392 76 394 392 77 76 393 74 392 393 76 395 75 72 399 395 72 393 398 73 74 393 73 398 72 73 398 399 72 117 119 116 119 118 116 114 117 115 117 116 115 394 387 392 387 385 392 111 113 110 113 112 110 108 111 109 111 110 109 376 71 380 67 71 376 49 53 67 67 53 71 380 70 381 71 70 380 53 52 71 71 52 70 381 69 388 70 69 381 52 51 70 70 51 69 69 68 389 388 69 389 
+51 50 69 69 50 68 68 66 396 389 68 396 50 48 68 68 48 66 65 67 376 65 376 377 47 49 65 49 67 65 396 64 397 66 64 396 48 46 66 66 46 64 63 65 377 63 377 35 45 47 63 47 65 63 397 62 5 64 62 397 46 44 64 64 44 62 378 63 35 61 63 378 43 45 61 61 45 63 62 60 398 62 398 5 44 42 62 42 60 62 379 61 378 59 61 379 41 43 59 59 43 61 60 55 399 60 399 398 42 36 60 36 55 60 58 59 379 58 379 386 40 41 58 41 59 58 57 58 386 57 386 387 39 40 57 40 58 57 57 387 394 56 57 394 56 394 395 54 56 395 
+37 38 54 38 56 54 54 395 399 55 54 399 36 37 55 37 54 55 49 34 53 34 28 53 53 28 52 28 22 52 22 16 52 52 16 51 16 10 51 51 10 50 10 4 50 50 4 48 33 34 47 34 49 47 48 4 46 4 3 46 32 33 45 33 47 45 46 3 44 3 2 44 31 32 45 43 31 45 2 1 44 1 42 44 30 31 43 41 30 43 1 0 42 0 36 42 24 30 40 30 41 40 18 24 39 24 40 39 12 18 39 12 39 38 6 12 38 6 38 37 0 6 37 0 37 36 384 378 29 378 35 29 35 382 29 35 377 382 28 33 27 34 33 28 27 32 26 33 32 27 
+31 25 26 32 31 26 30 24 25 31 30 25 385 384 23 384 29 23 29 383 23 29 382 383 22 27 21 28 27 22 21 26 20 27 26 21 25 19 20 26 25 20 24 18 19 25 24 19 392 385 17 385 23 17 23 390 17 23 383 390 16 21 15 22 21 16 15 20 14 21 20 15 19 13 14 20 19 14 18 12 13 19 18 13 393 392 11 392 17 11 17 391 11 17 390 391 10 15 9 16 15 10 9 14 8 15 14 9 13 7 8 14 13 8 12 6 7 13 12 7 398 393 5 393 11 5 11 397 5 11 391 397 4 9 3 10 9 4 3 8 2 9 8 3 7 1 2 8 7 2 
+6 0 1 7 6 1 </p>
+                </polylist>
+                <extra>
+                    <technique profile="LWCORE">
+                        <modifier_stack/>
+                        <hard_edges/>
+                    </technique>
+                </extra>
+            </mesh>
+        </geometry>
+        <geometry id="Polygonal_Geometry_1_lib" name="">
+            <mesh>
+                <source id="Polygonal_Geometry_1_positions" name="position">
+                    <float_array id="Polygonal_Geometry_1_positions_array" count="1590">-0.3 0.26 0.08 -0.3 -0.0399999 0.08 -0.3 -0.0399999 -0.08 -0.3 0.26 -0.08 -0.3 0.11 -0.08 -0.3 0.11 0.08 -0.3 0.26 0 -0.3 -0.0399999 0 -0.3 0.11 0 -0.295 0.11 0 -0.295 0.229838 -0.0454045 -0.295 0.229838 -0.0545956 -0.295 0.198162 -0.0545956 -0.295 0.198162 -0.0454045 -0.295 0.229838 0.0454045 -0.295 0.198162 0.0454045 -0.295 0.198162 0.0545955 -0.295 0.229838 0.0545955 -0.295 -0.0128382 -0.0454045 -0.295 0.0188382 -0.0454045 -0.295 0.0188382 -0.0545956 -0.295 -0.0128382 -0.0545956 -0.295 -0.0128382 0.0454045 -0.295 -0.0128382 0.0545955 -0.295 0.0188382 0.0545955 -0.295 0.0188382 0.0454045 -0.269429 0.228455 -0.0575711 -0.273912 0.228455 -0.0601593 -0.279088 0.228455 -0.0601593 -0.283571 0.228455 -0.0575711 -0.286159 0.228455 -0.0530882 -0.286159 0.228455 -0.0479118 -0.283571 0.228455 -0.0434289 -0.279088 0.228455 -0.0408407 -0.273912 0.228455 -0.0408408 -0.269429 0.228455 -0.0434289 -0.266841 0.228455 -0.0479118 -0.266841 0.228455 -0.0530882 -0.295 0.26 -0.08 -0.295 0.11 -0.08 -0.295 -0.0399999 -0.08 -0.295 0.26 0 -0.295 -0.0399999 0 -0.295 0.26 0.08 -0.295 0.11 0.08 -0.295 -0.0399999 0.08 -0.266841 0.236483 -0.0530882 -0.266841 0.236483 -0.0479118 -0.269429 0.236483 -0.0434289 -0.273912 0.236483 -0.0408408 
+-0.279088 0.236483 -0.0408407 -0.283571 0.236483 -0.0434289 -0.286159 0.236483 -0.0479118 -0.286159 0.236483 -0.0530882 -0.283571 0.236483 -0.0575711 -0.279088 0.236483 -0.0601593 -0.273912 0.236483 -0.0601593 -0.269429 0.236483 -0.0575711 -0.283571 0.228455 0.0575711 -0.279088 0.228455 0.0601593 -0.273912 0.228455 0.0601593 -0.269429 0.228455 0.0575711 -0.266841 0.228455 0.0530882 -0.266841 0.228455 0.0479118 -0.269429 0.228455 0.0434289 -0.273912 0.228455 0.0408407 -0.279088 0.228455 0.0408408 -0.283571 0.228455 0.0434289 -0.286159 0.228455 0.0479118 -0.286159 0.228455 0.0530882 -0.286159 0.236483 0.0530882 -0.286159 0.236483 0.0479118 -0.283571 0.236483 0.0434289 -0.279088 0.236483 0.0408408 -0.273912 0.236483 0.0408407 -0.269429 0.236483 0.0434289 -0.266841 0.236483 0.0479118 -0.266841 0.236483 0.0530882 -0.269429 0.236483 0.0575711 -0.273912 0.236483 0.0601593 -0.279088 0.236483 0.0601593 -0.283571 0.236483 0.0575711 -0.284265 0.236483 -0.0285885 -0.284265 0.228455 -0.0285885 -0.284265 0.236483 0.0285885 -0.284265 0.228455 0.0285885 -0.268735 0.228455 -0.0285885 -0.268735 0.228455 0.0285885 -0.268735 0.236483 -0.0285885 -0.268735 0.236483 0.0285885 -0.269429 0.017215 -0.0575711 -0.273912 0.017215 -0.0601593 -0.279088 0.017215 -0.0601593 -0.283571 0.017215 -0.0575711 -0.286159 0.017215 -0.0530882 -0.286159 0.017215 -0.0479118 -0.283571 0.017215 -0.0434289 -0.279088 0.017215 -0.0408407 -0.273912 0.017215 -0.0408408 -0.269429 0.017215 -0.0434289 
+-0.266841 0.017215 -0.0479118 -0.266841 0.017215 -0.0530882 -0.283571 0.017215 0.0575711 -0.279088 0.017215 0.0601593 -0.273912 0.017215 0.0601593 -0.269429 0.017215 0.0575711 -0.266841 0.017215 0.0530882 -0.266841 0.017215 0.0479118 -0.269429 0.017215 0.0434289 -0.273912 0.017215 0.0408407 -0.279088 0.017215 0.0408408 -0.283571 0.017215 0.0434289 -0.286159 0.017215 0.0479118 -0.286159 0.017215 0.0530882 -0.284265 0.0252433 -0.0285885 -0.284265 0.017215 -0.0285885 -0.284265 0.0252433 0.0285885 -0.284265 0.017215 0.0285885 -0.268735 0.017215 -0.0285885 -0.268735 0.017215 0.0285885 -0.268735 0.0252433 -0.0285885 -0.268735 0.0252433 0.0285885 -0.269429 0.193255 -0.0575711 -0.273912 0.193255 -0.0601593 -0.279088 0.193255 -0.0601593 -0.283571 0.193255 -0.0575711 -0.286159 0.193255 -0.0530882 -0.286159 0.193255 -0.0479118 -0.283571 0.193255 -0.0434289 -0.279088 0.193255 -0.0408407 -0.273912 0.193255 -0.0408408 -0.269429 0.193255 -0.0434289 -0.266841 0.193255 -0.0479118 -0.266841 0.193255 -0.0530882 -0.283571 0.193255 0.0575711 -0.279088 0.193255 0.0601593 -0.273912 0.193255 0.0601593 -0.269429 0.193255 0.0575711 -0.266841 0.193255 0.0530882 -0.266841 0.193255 0.0479118 -0.269429 0.193255 0.0434289 -0.273912 0.193255 0.0408407 -0.279088 0.193255 0.0408408 -0.283571 0.193255 0.0434289 -0.286159 0.193255 0.0479118 -0.286159 0.193255 0.0530882 -0.284265 0.201283 -0.0285885 -0.284265 0.193255 -0.0285885 -0.284265 0.201283 0.0285885 -0.284265 0.193255 0.0285885 
+-0.268735 0.193255 -0.0285885 -0.268735 0.193255 0.0285885 -0.268735 0.201283 -0.0285885 -0.268735 0.201283 0.0285885 -0.269429 0.158055 -0.0575711 -0.273912 0.158055 -0.0601593 -0.279088 0.158055 -0.0601593 -0.283571 0.158055 -0.0575711 -0.286159 0.158055 -0.0530882 -0.286159 0.158055 -0.0479118 -0.283571 0.158055 -0.0434289 -0.279088 0.158055 -0.0408407 -0.273912 0.158055 -0.0408408 -0.269429 0.158055 -0.0434289 -0.266841 0.158055 -0.0479118 -0.266841 0.158055 -0.0530882 -0.283571 0.158055 0.0575711 -0.279088 0.158055 0.0601593 -0.273912 0.158055 0.0601593 -0.269429 0.158055 0.0575711 -0.266841 0.158055 0.0530882 -0.266841 0.158055 0.0479118 -0.269429 0.158055 0.0434289 -0.273912 0.158055 0.0408407 -0.279088 0.158055 0.0408408 -0.283571 0.158055 0.0434289 -0.286159 0.158055 0.0479118 -0.286159 0.158055 0.0530882 -0.284265 0.166083 -0.0285885 -0.284265 0.158055 -0.0285885 -0.284265 0.166083 0.0285885 -0.284265 0.158055 0.0285885 -0.268735 0.158055 -0.0285885 -0.268735 0.158055 0.0285885 -0.268735 0.166083 -0.0285885 -0.268735 0.166083 0.0285885 -0.269429 0.122855 -0.0575711 -0.273912 0.122855 -0.0601593 -0.279088 0.122855 -0.0601593 -0.283571 0.122855 -0.0575711 -0.286159 0.122855 -0.0530882 -0.286159 0.122855 -0.0479118 -0.283571 0.122855 -0.0434289 -0.279088 0.122855 -0.0408407 -0.273912 0.122855 -0.0408408 -0.269429 0.122855 -0.0434289 -0.266841 0.122855 -0.0479118 -0.266841 0.122855 -0.0530882 -0.283571 0.122855 0.0575711 -0.279088 0.122855 0.0601593 
+-0.273912 0.122855 0.0601593 -0.269429 0.122855 0.0575711 -0.266841 0.122855 0.0530882 -0.266841 0.122855 0.0479118 -0.269429 0.122855 0.0434289 -0.273912 0.122855 0.0408407 -0.279088 0.122855 0.0408408 -0.283571 0.122855 0.0434289 -0.286159 0.122855 0.0479118 -0.286159 0.122855 0.0530882 -0.284265 0.130883 -0.0285885 -0.284265 0.122855 -0.0285885 -0.284265 0.130883 0.0285885 -0.284265 0.122855 0.0285885 -0.268735 0.122855 -0.0285885 -0.268735 0.122855 0.0285885 -0.268735 0.130883 -0.0285885 -0.268735 0.130883 0.0285885 -0.269429 0.087655 -0.0575711 -0.273912 0.087655 -0.0601593 -0.279088 0.087655 -0.0601593 -0.283571 0.087655 -0.0575711 -0.286159 0.087655 -0.0530882 -0.286159 0.087655 -0.0479118 -0.283571 0.087655 -0.0434289 -0.279088 0.087655 -0.0408407 -0.273912 0.087655 -0.0408408 -0.269429 0.087655 -0.0434289 -0.266841 0.087655 -0.0479118 -0.266841 0.087655 -0.0530882 -0.283571 0.087655 0.0575711 -0.279088 0.087655 0.0601593 -0.273912 0.087655 0.0601593 -0.269429 0.087655 0.0575711 -0.266841 0.087655 0.0530882 -0.266841 0.087655 0.0479118 -0.269429 0.087655 0.0434289 -0.273912 0.087655 0.0408407 -0.279088 0.087655 0.0408408 -0.283571 0.087655 0.0434289 -0.286159 0.087655 0.0479118 -0.286159 0.087655 0.0530882 -0.284265 0.0956833 -0.0285885 -0.284265 0.087655 -0.0285885 -0.284265 0.0956833 0.0285885 -0.284265 0.087655 0.0285885 -0.268735 0.087655 -0.0285885 -0.268735 0.087655 0.0285885 -0.268735 0.0956833 -0.0285885 -0.268735 0.0956833 0.0285885 
+-0.269429 0.052435 -0.0575711 -0.273912 0.052435 -0.0601593 -0.279088 0.052435 -0.0601593 -0.283571 0.052435 -0.0575711 -0.286159 0.052435 -0.0530882 -0.286159 0.052435 -0.0479118 -0.283571 0.052435 -0.0434289 -0.279088 0.052435 -0.0408407 -0.273912 0.052435 -0.0408408 -0.269429 0.052435 -0.0434289 -0.266841 0.052435 -0.0479118 -0.266841 0.052435 -0.0530882 -0.283571 0.052435 0.0575711 -0.279088 0.052435 0.0601593 -0.273912 0.052435 0.0601593 -0.269429 0.052435 0.0575711 -0.266841 0.052435 0.0530882 -0.266841 0.052435 0.0479118 -0.269429 0.052435 0.0434289 -0.273912 0.052435 0.0408407 -0.279088 0.052435 0.0408408 -0.283571 0.052435 0.0434289 -0.286159 0.052435 0.0479118 -0.286159 0.052435 0.0530882 -0.284265 0.0604634 -0.0285885 -0.284265 0.052435 -0.0285885 -0.284265 0.0604634 0.0285885 -0.284265 0.052435 0.0285885 -0.268735 0.052435 -0.0285885 -0.268735 0.052435 0.0285885 -0.268735 0.0604634 -0.0285885 -0.268735 0.0604634 0.0285885 -0.279088 0.201266 -0.0601593 -0.273912 0.201266 -0.0601593 -0.279088 0.166066 -0.0601593 -0.273912 0.166066 -0.0601593 -0.279088 0.130866 -0.0601593 -0.273912 0.130866 -0.0601593 -0.279088 0.0956655 -0.0601593 -0.273912 0.0956655 -0.0601593 -0.279088 0.0604655 -0.0601593 -0.273912 0.0604655 -0.0601593 -0.273912 0.0252433 -0.0601593 -0.279088 0.0252433 -0.0601593 -0.266841 0.201266 -0.0530882 -0.266841 0.201266 -0.0479118 -0.269429 0.201266 -0.0434289 -0.273912 0.201266 -0.0408408 -0.279088 0.201266 -0.0408407 -0.283571 0.201266 -0.0434289 
+-0.286159 0.201266 -0.0479118 -0.286159 0.201266 -0.0530882 -0.283571 0.201266 -0.0575711 -0.269429 0.201266 -0.0575711 -0.266841 0.166066 -0.0530882 -0.266841 0.166066 -0.0479118 -0.269429 0.166066 -0.0434289 -0.273912 0.166066 -0.0408408 -0.279088 0.166066 -0.0408407 -0.283571 0.166066 -0.0434289 -0.286159 0.166066 -0.0479118 -0.286159 0.166066 -0.0530882 -0.283571 0.166066 -0.0575711 -0.269429 0.166066 -0.0575711 -0.266841 0.130866 -0.0530882 -0.266841 0.130866 -0.0479118 -0.269429 0.130866 -0.0434289 -0.273912 0.130866 -0.0408408 -0.279088 0.130866 -0.0408407 -0.283571 0.130866 -0.0434289 -0.286159 0.130866 -0.0479118 -0.286159 0.130866 -0.0530882 -0.283571 0.130866 -0.0575711 -0.269429 0.130866 -0.0575711 -0.266841 0.0956655 -0.0530882 -0.266841 0.0956655 -0.0479118 -0.269429 0.0956655 -0.0434289 -0.273912 0.0956655 -0.0408408 -0.279088 0.0956655 -0.0408407 -0.283571 0.0956655 -0.0434289 -0.286159 0.0956655 -0.0479118 -0.286159 0.0956655 -0.0530882 -0.283571 0.0956655 -0.0575711 -0.269429 0.0956655 -0.0575711 -0.266841 0.0604655 -0.0530882 -0.266841 0.0604655 -0.0479118 -0.269429 0.0604655 -0.0434289 -0.273912 0.0604655 -0.0408408 -0.279088 0.0604655 -0.0408407 -0.283571 0.0604655 -0.0434289 -0.286159 0.0604655 -0.0479118 -0.286159 0.0604655 -0.0530882 -0.283571 0.0604655 -0.0575711 -0.269429 0.0604655 -0.0575711 -0.269429 0.0252433 -0.0575711 -0.283571 0.0252433 -0.0575711 -0.286159 0.0252433 -0.0530882 -0.286159 0.0252433 -0.0479118 -0.283571 0.0252433 -0.0434289 -0.279088 0.0252433 -0.0408407 
+-0.273912 0.0252433 -0.0408408 -0.269429 0.0252433 -0.0434289 -0.266841 0.0252433 -0.0479118 -0.266841 0.0252433 -0.0530882 -0.286159 0.201266 0.0530882 -0.286159 0.201266 0.0479118 -0.283571 0.201266 0.0434289 -0.279088 0.201266 0.0408408 -0.273912 0.201266 0.0408407 -0.269429 0.201266 0.0434289 -0.266841 0.201266 0.0479118 -0.266841 0.201266 0.0530882 -0.269429 0.201266 0.0575711 -0.283571 0.201266 0.0575711 -0.286159 0.166066 0.0530882 -0.286159 0.166066 0.0479118 -0.283571 0.166066 0.0434289 -0.279088 0.166066 0.0408408 -0.273912 0.166066 0.0408407 -0.269429 0.166066 0.0434289 -0.266841 0.166066 0.0479118 -0.266841 0.166066 0.0530882 -0.269429 0.166066 0.0575711 -0.283571 0.166066 0.0575711 -0.286159 0.130866 0.0530882 -0.286159 0.130866 0.0479118 -0.283571 0.130866 0.0434289 -0.279088 0.130866 0.0408408 -0.273912 0.130866 0.0408407 -0.269429 0.130866 0.0434289 -0.266841 0.130866 0.0479118 -0.266841 0.130866 0.0530882 -0.269429 0.130866 0.0575711 -0.283571 0.130866 0.0575711 -0.286159 0.0956655 0.0530882 -0.286159 0.0956655 0.0479118 -0.283571 0.0956655 0.0434289 -0.279088 0.0956655 0.0408408 -0.273912 0.0956655 0.0408407 -0.269429 0.0956655 0.0434289 -0.266841 0.0956655 0.0479118 -0.266841 0.0956655 0.0530882 -0.269429 0.0956655 0.0575711 -0.283571 0.0956655 0.0575711 -0.286159 0.0604655 0.0530882 -0.286159 0.0604655 0.0479118 -0.283571 0.0604655 0.0434289 -0.279088 0.0604655 0.0408408 -0.273912 0.0604655 0.0408407 -0.269429 0.0604655 0.0434289 
+-0.266841 0.0604655 0.0479118 -0.266841 0.0604655 0.0530882 -0.269429 0.0604655 0.0575711 -0.283571 0.0604655 0.0575711 -0.283571 0.0252433 0.0575711 -0.269429 0.0252433 0.0575711 -0.266841 0.0252433 0.0530882 -0.266841 0.0252433 0.0479118 -0.269429 0.0252433 0.0434289 -0.273912 0.0252433 0.0408407 -0.279088 0.0252433 0.0408408 -0.283571 0.0252433 0.0434289 -0.286159 0.0252433 0.0479118 -0.286159 0.0252433 0.0530882 -0.273912 0.201266 0.0601593 -0.279088 0.201266 0.0601593 -0.273912 0.166066 0.0601593 -0.279088 0.166066 0.0601593 -0.273912 0.130866 0.0601593 -0.279088 0.130866 0.0601593 -0.273912 0.0956655 0.0601593 -0.279088 0.0956655 0.0601593 -0.273912 0.0604655 0.0601593 -0.279088 0.0604655 0.0601593 -0.279088 0.0252433 0.0601593 -0.273912 0.0252433 0.0601593 -0.269429 -0.017985 -0.0575711 -0.273912 -0.017985 -0.0601593 -0.279088 -0.017985 -0.0601593 -0.283571 -0.017985 -0.0575711 -0.286159 -0.017985 -0.0530882 -0.286159 -0.017985 -0.0479118 -0.283571 -0.017985 -0.0434289 -0.279088 -0.017985 -0.0408407 -0.273912 -0.017985 -0.0408408 -0.269429 -0.017985 -0.0434289 -0.266841 -0.017985 -0.0479118 -0.266841 -0.017985 -0.0530882 -0.283571 -0.017985 0.0575711 -0.279088 -0.017985 0.0601593 -0.273912 -0.017985 0.0601593 -0.269429 -0.017985 0.0575711 -0.266841 -0.017985 0.0530882 -0.266841 -0.017985 0.0479118 -0.269429 -0.017985 0.0434289 -0.273912 -0.017985 0.0408407 -0.279088 -0.017985 0.0408408 -0.283571 -0.017985 0.0434289 -0.286159 -0.017985 0.0479118 -0.286159 -0.017985 0.0530882 
+-0.284265 -0.00995666 -0.0285885 -0.284265 -0.017985 -0.0285885 -0.284265 -0.00995666 0.0285885 -0.284265 -0.017985 0.0285885 -0.268735 -0.017985 -0.0285885 -0.268735 -0.017985 0.0285885 -0.268735 -0.00995666 -0.0285885 -0.268735 -0.00995666 0.0285885 -0.279088 -0.00997442 -0.0601593 -0.273912 -0.00997442 -0.0601593 -0.266841 -0.00997442 -0.0530882 -0.266841 -0.00997442 -0.0479118 -0.269429 -0.00997442 -0.0434289 -0.273912 -0.00997442 -0.0408408 -0.279088 -0.00997442 -0.0408407 -0.283571 -0.00997442 -0.0434289 -0.286159 -0.00997442 -0.0479118 -0.286159 -0.00997442 -0.0530882 -0.283571 -0.00997442 -0.0575711 -0.269429 -0.00997442 -0.0575711 -0.286159 -0.00997442 0.0530882 -0.286159 -0.00997442 0.0479118 -0.283571 -0.00997442 0.0434289 -0.279088 -0.00997442 0.0408408 -0.273912 -0.00997442 0.0408407 -0.269429 -0.00997442 0.0434289 -0.266841 -0.00997442 0.0479118 -0.266841 -0.00997442 0.0530882 -0.269429 -0.00997442 0.0575711 -0.283571 -0.00997442 0.0575711 -0.273912 -0.00997442 0.0601593 -0.279088 -0.00997442 0.0601593 -0.279088 -0.0451745 -0.0601593 -0.273912 -0.0451745 -0.0601593 -0.266841 -0.0451745 -0.0530882 -0.266841 -0.0451745 -0.0479118 -0.269429 -0.0451745 -0.0434289 -0.273912 -0.0451745 -0.0408408 -0.279088 -0.0451745 -0.0408407 -0.283571 -0.0451745 -0.0434289 -0.286159 -0.0451745 -0.0479118 -0.286159 -0.0451745 -0.0530882 -0.283571 -0.0451745 -0.0575711 -0.269429 -0.0451745 -0.0575711 -0.269429 -0.0451736 0.0434289 -0.283571 -0.0451736 0.0434289 -0.286159 -0.0451736 0.0479118 -0.286159 -0.0451736 0.0530882 -0.283571 -0.0451736 0.0575711 -0.269429 -0.0451736 0.0575711 
+-0.266841 -0.0451736 0.0530882 -0.266841 -0.0451736 0.0479118 -0.273912 -0.0451736 0.0408407 -0.279088 -0.0451736 0.0408407 -0.279088 -0.0451736 0.0601593 -0.273912 -0.0451736 0.0601592 -0.279088 0.263664 -0.0601593 -0.273912 0.263664 -0.0601593 -0.266841 0.263664 -0.0530882 -0.266841 0.263664 -0.0479118 -0.269429 0.263664 -0.0434289 -0.273912 0.263664 -0.0408408 -0.279088 0.263664 -0.0408407 -0.283571 0.263664 -0.0434289 -0.286159 0.263664 -0.0479118 -0.286159 0.263664 -0.0530882 -0.283571 0.263664 -0.0575711 -0.269429 0.263664 -0.0575711 -0.273912 0.263664 0.0408407 -0.279088 0.263664 0.0408407 -0.283571 0.263664 0.0434289 -0.286159 0.263664 0.0479118 -0.286159 0.263664 0.0530882 -0.283571 0.263664 0.0575711 -0.269429 0.263664 0.0575711 -0.266841 0.263664 0.0530882 -0.266841 0.263664 0.0479118 -0.269429 0.263664 0.0434289 -0.279088 0.263664 0.0601593 -0.273912 0.263664 0.0601592 </float_array>
+                    <technique_common>
+                        <accessor count="530" offset="0" source="#Polygonal_Geometry_1_positions_array" stride="3">
+                            <param name="X" type="float"/>
+                            <param name="Y" type="float"/>
+                            <param name="Z" type="float"/>
+                        </accessor>
+                    </technique_common>
+                </source>
+                <vertices id="Polygonal_Geometry_1_vertices">
+                    <input semantic="POSITION" source="#Polygonal_Geometry_1_positions"/>
+                </vertices>
+                <polylist count="1116" material="Default_2">
+                    <input offset="0" semantic="VERTEX" source="#Polygonal_Geometry_1_vertices"/>
+                    <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+                    <p>522 523 528 529 522 528 521 522 529 520 521 529 519 520 529 518 519 529 527 518 529 526 527 529 525 526 529 524 525 529 498 497 504 497 505 504 497 496 505 496 495 505 495 499 505 495 503 499 503 502 499 502 500 499 502 494 501 502 501 500 498 497 504 497 505 504 497 496 505 496 495 505 495 499 505 495 503 499 503 502 499 502 500 499 502 494 501 502 501 500 489 490 488 490 487 488 490 491 487 491 492 487 492 482 487 482 483 487 483 493 487 493 484 487 485 486 487 484 485 487 489 490 488 490 487 488 490 491 487 491 492 487 492 482 487 482 483 487 483 493 487 493 484 487 485 486 487 484 485 487 
+514 513 512 511 514 512 515 514 511 516 515 511 506 516 511 507 506 511 517 507 511 508 517 511 509 508 511 510 509 511 94 20 95 20 19 95 95 19 466 466 19 18 467 466 21 21 466 18 20 94 467 20 467 21 11 10 31 30 11 31 11 301 12 11 30 301 12 300 13 301 300 12 300 10 13 31 10 300 69 17 354 354 17 16 355 354 16 15 355 16 14 68 355 14 355 15 68 17 69 14 17 68 113 24 470 470 24 23 471 470 23 22 471 23 25 112 471 25 471 22 112 24 113 25 24 112 457 452 474 474 452 473 456 450 457 457 450 452 456 463 464 450 456 464 455 474 445 457 474 455 
+454 456 455 456 457 455 434 463 454 463 456 454 453 445 446 453 455 445 451 455 453 451 454 455 433 454 451 433 434 454 473 452 453 473 453 446 452 450 451 452 451 453 450 464 451 464 433 451 487 433 488 434 433 487 503 445 502 446 445 503 470 449 438 479 470 438 471 448 449 470 471 449 472 447 448 471 472 448 473 446 447 472 473 447 445 474 444 474 475 444 444 475 443 475 476 443 443 476 442 476 477 442 442 477 441 477 478 441 478 480 440 441 478 440 480 481 439 480 439 440 481 479 438 481 438 439 438 449 497 438 497 498 448 496 497 449 448 497 447 495 496 448 447 496 446 503 495 447 446 495 
+502 445 494 445 444 494 494 444 501 444 443 501 501 443 500 443 442 500 500 442 499 442 441 499 441 440 505 499 441 505 505 439 504 440 439 505 438 498 504 439 438 504 426 460 437 469 460 426 437 461 436 460 461 437 436 462 435 461 462 436 435 462 434 462 463 434 464 432 433 464 465 432 465 431 432 465 466 431 466 430 431 466 467 430 467 429 430 467 468 429 458 428 429 468 458 429 428 459 427 458 459 428 427 469 426 459 469 427 493 437 484 426 437 493 484 436 485 437 436 484 485 435 486 436 435 485 486 434 487 435 434 486 432 489 488 433 432 488 432 490 489 432 431 490 431 491 490 431 430 491 
+430 492 491 430 429 492 429 428 482 429 482 492 428 427 483 482 428 483 483 426 493 427 426 483 398 281 276 397 398 276 280 274 281 281 274 276 337 338 280 280 338 274 279 281 269 281 398 269 278 280 279 280 281 279 258 280 278 337 280 258 277 269 270 277 279 269 275 279 277 275 278 279 257 278 275 257 258 278 397 276 270 276 277 270 276 274 275 276 275 277 274 338 257 274 257 275 350 258 349 258 257 349 270 409 410 270 269 409 394 273 262 403 394 262 395 272 273 394 395 273 396 271 272 395 396 272 397 270 271 396 397 271 269 398 268 398 399 268 268 399 267 399 400 267 267 400 266 400 401 266 
+266 401 265 401 402 265 402 422 264 265 402 264 422 423 263 422 263 264 423 403 262 423 262 263 273 413 404 262 273 404 272 412 413 273 272 413 271 411 412 272 271 412 271 410 411 271 270 410 409 269 408 269 268 408 408 268 407 268 267 407 407 267 406 267 266 406 406 266 405 266 265 405 405 264 425 265 264 405 263 424 425 264 263 425 262 404 424 263 262 424 250 334 261 343 334 250 261 335 260 334 335 261 260 336 259 335 336 260 259 336 258 336 337 258 338 256 257 338 339 256 339 255 256 339 340 255 340 254 255 340 341 254 341 253 254 341 342 253 290 252 253 342 290 253 252 291 251 290 291 252 
+251 343 250 291 343 251 344 261 353 250 261 344 353 260 352 261 260 353 352 259 351 260 259 352 351 259 350 259 258 350 257 348 349 257 256 348 256 347 348 256 255 347 255 346 347 255 254 346 254 345 346 254 253 345 252 293 345 253 252 345 293 251 292 252 251 293 292 250 344 251 250 292 249 244 388 388 244 387 248 242 249 249 242 244 248 327 328 242 248 328 247 388 237 249 388 247 246 248 247 248 249 247 226 327 246 327 248 246 245 237 238 245 247 237 243 247 245 243 246 247 225 246 243 225 226 246 387 244 245 387 245 238 244 242 243 244 243 245 242 328 243 328 225 243 337 225 338 226 225 337 
+238 398 397 238 237 398 384 241 230 393 384 230 385 240 241 384 385 241 386 239 240 385 386 240 387 238 239 386 387 239 237 388 236 388 389 236 236 389 235 389 390 235 235 390 234 390 391 234 234 391 233 391 392 233 392 420 232 233 392 232 420 421 231 420 231 232 421 393 230 421 230 231 241 394 403 230 241 403 240 395 394 241 240 394 239 396 395 240 239 395 239 397 396 239 238 397 398 237 399 237 236 399 399 236 400 236 235 400 400 235 401 235 234 401 401 234 402 234 233 402 402 232 422 233 232 402 231 423 422 232 231 422 230 403 423 231 230 423 218 324 229 333 324 218 229 325 228 324 325 229 
+228 326 227 325 326 228 227 326 226 326 327 226 328 224 225 328 329 224 329 223 224 329 330 223 330 222 223 330 331 222 331 221 222 331 332 221 288 220 221 332 288 221 220 289 219 288 289 220 219 333 218 289 333 219 343 229 334 218 229 343 334 228 335 229 228 334 335 227 336 228 227 335 336 226 337 227 226 336 224 339 338 225 224 338 224 340 339 224 223 340 223 341 340 223 222 341 222 342 341 222 221 342 221 220 290 221 290 342 220 219 291 290 220 291 291 218 343 219 218 291 217 212 378 378 212 377 216 210 217 217 210 212 216 317 318 210 216 318 215 378 205 217 378 215 214 216 215 216 217 215 
+194 317 214 317 216 214 213 205 206 213 215 205 211 215 213 211 214 215 193 214 211 193 194 214 377 212 213 377 213 206 212 210 211 212 211 213 210 318 211 318 193 211 327 193 328 194 193 327 206 388 387 206 205 388 374 209 198 383 374 198 375 208 209 374 375 209 376 207 208 375 376 208 377 206 207 376 377 207 205 378 204 378 379 204 204 379 203 379 380 203 203 380 202 380 381 202 202 381 201 381 382 201 382 418 200 201 382 200 418 419 199 418 199 200 419 383 198 419 198 199 209 384 393 198 209 393 208 385 384 209 208 384 207 386 385 208 207 385 207 387 386 207 206 387 388 205 389 205 204 389 
+389 204 390 204 203 390 390 203 391 203 202 391 391 202 392 202 201 392 392 200 420 201 200 392 199 421 420 200 199 420 198 393 421 199 198 421 186 314 197 323 314 186 197 315 196 314 315 197 196 316 195 315 316 196 195 316 194 316 317 194 318 192 193 318 319 192 319 191 192 319 320 191 320 190 191 320 321 190 321 189 190 321 322 189 286 188 189 322 286 189 188 287 187 286 287 188 187 323 186 287 323 187 333 197 324 186 197 333 324 196 325 197 196 324 325 195 326 196 195 325 326 194 327 195 194 326 192 329 328 193 192 328 192 330 329 192 191 330 191 331 330 191 190 331 190 332 331 190 189 332 
+189 188 288 189 288 332 188 187 289 288 188 289 289 186 333 187 186 289 185 180 368 368 180 367 184 178 185 185 178 180 184 307 308 178 184 308 183 368 173 185 368 183 182 184 183 184 185 183 162 307 182 307 184 182 181 173 174 181 183 173 179 183 181 179 182 183 161 182 179 161 162 182 367 180 181 367 181 174 180 178 179 180 179 181 178 308 179 308 161 179 317 161 318 162 161 317 174 378 377 174 173 378 364 177 166 373 364 166 365 176 177 364 365 177 366 175 176 365 366 176 367 174 175 366 367 175 173 368 172 368 369 172 172 369 171 369 370 171 171 370 170 370 371 170 170 371 169 371 372 169 
+372 416 168 169 372 168 416 417 167 416 167 168 417 373 166 417 166 167 177 374 383 166 177 383 176 375 374 177 176 374 175 376 375 176 175 375 175 377 376 175 174 377 378 173 379 173 172 379 379 172 380 172 171 380 380 171 381 171 170 381 381 170 382 170 169 382 382 168 418 169 168 382 167 419 418 168 167 418 166 383 419 167 166 419 154 304 165 313 304 154 165 305 164 304 305 165 164 306 163 305 306 164 163 306 162 306 307 162 308 160 161 308 309 160 309 159 160 309 310 159 310 158 159 310 311 158 311 157 158 311 312 157 284 156 157 312 284 157 156 285 155 284 285 156 155 313 154 285 313 155 
+323 165 314 154 165 323 314 164 315 165 164 314 315 163 316 164 163 315 316 162 317 163 162 316 160 319 318 161 160 318 160 320 319 160 159 320 159 321 320 159 158 321 158 322 321 158 157 322 157 156 286 157 286 322 156 155 287 286 156 287 287 154 323 155 154 287 153 148 358 358 148 357 152 146 153 153 146 148 152 297 298 146 152 298 151 358 141 153 358 151 150 152 151 152 153 151 130 297 150 297 152 150 149 141 142 149 151 141 147 151 149 147 150 151 129 150 147 129 130 150 357 148 149 357 149 142 148 146 147 148 147 149 146 298 147 298 129 147 307 129 308 130 129 307 142 368 367 142 141 368 
+354 145 134 363 354 134 355 144 145 354 355 145 356 143 144 355 356 144 357 142 143 356 357 143 141 358 140 358 359 140 140 359 139 359 360 139 139 360 138 360 361 138 138 361 137 361 362 137 362 414 136 137 362 136 414 415 135 414 135 136 415 363 134 415 134 135 145 364 373 134 145 373 144 365 364 145 144 364 143 366 365 144 143 365 143 367 366 143 142 367 368 141 369 141 140 369 369 140 370 140 139 370 370 139 371 139 138 371 371 138 372 138 137 372 372 136 416 137 136 372 135 417 416 136 135 416 134 373 417 135 134 417 122 294 133 303 294 122 133 295 132 294 295 133 132 296 131 295 296 132 
+131 296 130 296 297 130 298 128 129 298 299 128 299 127 128 299 300 127 300 126 127 300 301 126 301 125 126 301 302 125 282 124 125 302 282 125 124 283 123 282 283 124 123 303 122 283 303 123 313 133 304 122 133 313 304 132 305 133 132 304 305 131 306 132 131 305 306 130 307 131 130 306 128 309 308 129 128 308 128 310 309 128 127 310 127 311 310 127 126 311 126 312 311 126 125 312 125 124 284 125 284 312 124 123 285 284 124 285 285 122 313 123 122 285 121 116 409 409 116 410 120 114 121 121 114 116 350 349 120 120 349 114 119 121 109 121 409 109 118 120 119 120 121 119 98 350 118 350 120 118 
+117 109 110 117 119 109 115 119 117 115 118 119 97 118 115 97 98 118 410 116 117 410 117 110 116 114 115 116 115 117 114 349 97 114 97 115 463 97 464 98 97 463 110 474 473 110 109 474 413 113 102 404 413 102 412 112 113 413 412 113 411 111 112 412 411 112 411 110 111 411 410 110 109 409 108 409 408 108 108 408 107 408 407 107 107 407 106 407 406 106 106 406 105 406 405 105 105 425 104 405 425 105 424 103 104 425 424 104 404 102 103 424 404 103 113 470 479 102 113 479 111 472 471 112 111 471 111 473 472 111 110 473 474 109 475 109 108 475 475 108 476 108 107 476 476 107 477 107 106 477 
+477 106 478 106 105 478 478 104 480 105 104 478 103 481 480 104 103 480 102 479 481 103 102 481 90 353 101 344 353 90 101 352 100 353 352 101 100 351 99 352 351 100 99 351 98 351 350 98 349 96 97 349 348 96 348 95 96 348 347 95 347 94 95 347 346 94 346 93 94 346 345 93 293 92 93 345 293 93 92 292 91 293 292 92 91 344 90 292 344 91 469 101 460 90 101 469 460 100 461 101 100 460 461 99 462 100 99 461 462 98 463 99 98 462 96 465 464 97 96 464 96 466 465 96 95 466 94 468 467 94 93 468 93 92 458 93 458 468 92 91 459 458 92 459 459 90 469 91 90 459 
+89 84 74 74 84 73 88 82 89 89 82 84 49 50 88 88 50 82 87 89 65 89 74 65 86 88 87 88 89 87 34 49 86 49 88 86 85 65 66 85 87 65 83 87 85 83 86 87 33 86 83 33 34 86 73 84 85 73 85 66 84 82 83 84 83 85 82 50 33 82 33 83 297 33 298 34 33 297 66 358 357 66 65 358 5 1 45 44 5 45 2 39 40 4 39 2 522 70 81 523 522 81 522 521 71 522 71 70 521 520 72 521 72 71 520 73 72 520 519 73 519 74 73 519 518 74 74 518 75 518 527 75 75 526 76 527 526 75 76 525 77 526 525 76 77 524 78 525 524 77 
+78 529 79 524 529 78 528 80 79 529 528 79 523 81 80 528 523 80 70 69 58 81 70 58 71 68 69 70 71 69 72 67 68 71 72 68 72 66 67 72 73 66 65 74 64 74 75 64 64 75 63 75 76 63 63 76 62 76 77 62 62 77 61 77 78 61 61 79 60 78 79 61 80 59 60 79 80 60 81 58 59 80 81 59 69 354 363 58 69 363 67 356 355 68 67 355 67 357 356 67 66 357 358 65 359 65 64 359 359 64 360 64 63 360 360 63 361 63 62 361 361 62 362 62 61 362 362 60 414 61 60 362 59 415 414 60 59 414 58 363 415 59 58 415 57 508 46 517 508 57 
+46 509 47 508 509 46 47 510 48 509 510 47 48 510 49 510 511 49 49 511 50 511 512 50 512 51 50 512 513 51 513 52 51 513 514 52 514 53 52 514 515 53 515 54 53 515 516 54 506 55 54 516 506 54 55 507 56 506 507 55 56 517 57 507 517 56 26 46 37 57 46 26 37 47 36 46 47 37 36 48 35 47 48 36 35 48 34 48 49 34 50 32 33 50 51 32 51 31 32 51 52 31 52 30 31 52 53 30 53 29 30 53 54 29 55 28 29 54 55 29 28 56 27 55 56 28 27 57 26 56 57 27 303 37 294 26 37 303 294 36 295 37 36 294 295 35 296 36 35 295 
+296 34 297 35 34 296 32 299 298 33 32 298 32 300 299 32 31 300 30 302 301 30 29 302 29 28 282 29 282 302 28 27 283 282 28 283 283 26 303 27 26 283 25 22 42 9 25 42 9 44 25 25 44 24 24 44 45 23 24 45 22 23 45 42 22 45 40 18 42 21 18 40 20 21 40 39 20 40 20 39 19 39 9 19 19 9 42 18 19 42 41 43 14 14 43 17 17 43 16 16 43 44 15 16 44 9 15 44 41 15 9 41 14 15 10 41 13 13 41 9 39 13 9 12 13 39 38 12 39 38 11 12 11 38 10 38 41 10 0 8 5 0 6 8 3 4 8 6 3 8 
+8 4 2 8 2 7 5 8 1 8 7 1 1 42 45 7 42 1 2 40 42 7 2 42 6 0 43 41 6 43 38 3 41 3 6 41 43 0 44 0 5 44 3 38 39 4 3 39 </p>
+                </polylist>
+                <extra>
+                    <technique profile="LWCORE">
+                        <modifier_stack/>
+                        <hard_edges/>
+                    </technique>
+                </extra>
+            </mesh>
+        </geometry>
+        <geometry id="Polygonal_Geometry_2_lib" name="">
+            <mesh>
+                <source id="Polygonal_Geometry_2_positions" name="position">
+                    <float_array id="Polygonal_Geometry_2_positions_array" count="126">0.1275 -0.14 0.204 1.49012e-08 -0.14 0.204 -0.1275 -0.14 0.204 0.1275 -0.14 0.068 -0.1275 -0.14 0.068 0.1275 -0.14 -0.068 -0.1275 -0.14 -0.068 0.1275 -0.14 -0.204 1.49012e-08 -0.14 -0.204 -0.1275 -0.14 -0.204 1.49012e-08 -0.15 0.204 0.1275 -0.15 0.204 0.1275 -0.15 0.068 -0.1275 -0.15 0.204 -0.1275 -0.15 0.068 0.1275 -0.15 -0.068 -0.1275 -0.15 -0.068 0.1275 -0.15 -0.204 1.49012e-08 -0.15 -0.204 -0.1275 -0.15 -0.204 1.49012e-08 -0.15 0.1836 0.11475 -0.15 0.1836 0.11475 -0.15 0.0612 -0.11475 -0.15 0.1836 -0.11475 -0.15 0.0612 0.11475 -0.15 -0.0612 -0.11475 -0.15 -0.0612 0.11475 -0.15 -0.1836 1.49012e-08 -0.15 -0.1836 -0.11475 -0.15 -0.1836 1.49012e-08 -0.136 0.1836 0.11475 -0.136 0.1836 0.11475 -0.136 0.0612 1.49012e-08 -0.136 0.0612 -0.11475 -0.136 0.1836 -0.11475 -0.136 0.0612 0.11475 -0.136 -0.0612 1.49012e-08 -0.136 -0.0612 -0.11475 -0.136 -0.0612 0.11475 -0.136 -0.1836 1.49012e-08 -0.136 -0.1836 -0.11475 -0.136 -0.1836 </float_array>
+                    <technique_common>
+                        <accessor count="42" offset="0" source="#Polygonal_Geometry_2_positions_array" stride="3">
+                            <param name="X" type="float"/>
+                            <param name="Y" type="float"/>
+                            <param name="Z" type="float"/>
+                        </accessor>
+                    </technique_common>
+                </source>
+                <vertices id="Polygonal_Geometry_2_vertices">
+                    <input semantic="POSITION" source="#Polygonal_Geometry_2_positions"/>
+                </vertices>
+                <polylist count="72" material="Default_3">
+                    <input offset="0" semantic="VERTEX" source="#Polygonal_Geometry_2_vertices"/>
+                    <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+                    <p>33 31 30 33 32 31 34 35 30 35 33 30 37 32 33 37 36 32 35 38 33 38 37 33 40 36 37 40 39 36 38 41 37 41 40 37 11 1 10 0 1 11 12 0 11 3 0 12 1 13 10 1 2 13 2 14 13 2 4 14 15 3 12 5 3 15 4 16 14 4 6 16 17 5 15 7 5 17 8 17 18 8 7 17 19 8 18 9 8 19 6 19 16 6 9 19 20 21 10 21 11 10 21 12 11 22 12 21 23 20 10 13 23 10 14 24 23 14 23 13 22 25 12 25 15 12 26 24 14 16 26 14 27 15 25 27 17 15 18 27 28 18 17 27 29 18 28 19 18 29 
+16 29 26 19 29 16 30 31 20 31 21 20 31 32 21 32 22 21 34 30 20 23 34 20 35 34 23 24 35 23 32 36 22 36 25 22 38 35 24 26 38 24 36 39 25 39 27 25 39 40 28 27 39 28 40 41 28 41 29 28 41 38 26 29 41 26 </p>
+                </polylist>
+                <extra>
+                    <technique profile="LWCORE">
+                        <modifier_stack/>
+                        <hard_edges/>
+                    </technique>
+                </extra>
+            </mesh>
+        </geometry>
+    </library_geometries>
+    <library_controllers/>
+    <library_visual_scenes>
+        <visual_scene id="VisualSceneNode" name="Scene">
+            <node id="Polygonal_Geometry" name="Polygonal_Geometry">
+                <translate sid="translate">0 0 0</translate>
+                <translate sid="rotatePivotCompensation">0 0 0</translate>
+                <translate sid="rotatePivot">0 0 0</translate>
+                <rotate sid="rotatePivotOffsetY">0 1 0 0</rotate>
+                <rotate sid="rotatePivotOffsetX">1 0 0 0</rotate>
+                <rotate sid="rotatePivotOffsetZ">0 0 1 0</rotate>
+                <rotate sid="rotateY">0 1 0 0</rotate>
+                <rotate sid="rotateX">1 0 0 0</rotate>
+                <rotate sid="rotateZ">0 0 1 0</rotate>
+                <rotate sid="rotatePivotAxisY">0 1 0 0</rotate>
+                <rotate sid="rotatePivotAxisX">1 0 0 0</rotate>
+                <rotate sid="rotatePivotAxisZ">0 0 1 0</rotate>
+                <translate sid="rotatePivotInverse">0 0 0</translate>
+                <translate sid="scalePivotCompensation">0 0 0</translate>
+                <translate sid="scalePivot">0 0 0</translate>
+                <scale sid="scale">1 1 1</scale>
+                <translate sid="scalePivotInverse">0 0 0</translate>
+                <instance_geometry url="#Polygonal_Geometry_lib">
+                    <bind_material>
+                        <technique_common>
+                            <instance_material symbol="Default" target="#Default"/>
+                            <instance_material symbol="Default_1" target="#Default_1"/>
+                            <instance_material symbol="Default_2" target="#Default_2"/>
+                            <instance_material symbol="Default_3" target="#Default_3"/>
+                        </technique_common>
+                    </bind_material>
+                </instance_geometry>
+                <extra>
+                    <technique profile="LWCORE">
+                        <component id="comp_SceneObject" type="SceneObject">
+                            <attribute sid="Name" dynamic="custom">
+                                <description>
+                                    <parameter_type value="string"/>
+                                    <is_input value="true"/>
+                                </description>
+                                <string>Polygonal_Geometry</string>
+                            </attribute>
+                            <attribute sid="Self" dynamic="custom">
+                                <description>
+                                    <parameter_type value="WeakRef"/>
+                                    <is_input value="false"/>
+                                </description>
+                            </attribute>
+                            <attribute sid="Name_1">
+                                <string></string>
+                            </attribute>
+                            <attribute sid="Transform">
+                                <StrongRef></StrongRef>
+                                <connected_component target_attribute="Transform">
+                                    <component id="comp_FKMotionController" type="FKMotionController">
+                                        <attribute sid="Name">
+                                            <string></string>
+                                        </attribute>
+                                        <attribute sid="TranslateX">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="TranslateY">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="TranslateZ">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RotateX">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RotateY">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RotateZ">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RotateOrder">
+                                            <int>3</int>
+                                        </attribute>
+                                        <attribute sid="ScaleX">
+                                            <float>1</float>
+                                        </attribute>
+                                        <attribute sid="ScaleY">
+                                            <float>1</float>
+                                        </attribute>
+                                        <attribute sid="ScaleZ">
+                                            <float>1</float>
+                                        </attribute>
+                                        <attribute sid="RotateAxisX">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RotateAxisY">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RotateAxisZ">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RotateAxisOrder">
+                                            <int>3</int>
+                                        </attribute>
+                                        <attribute sid="RotateOffsetX">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RotateOffsetY">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RotateOffsetZ">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RotateOffsetOrder">
+                                            <int>3</int>
+                                        </attribute>
+                                        <attribute sid="RotatePivotPositionX">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RotatePivotPositionY">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RotatePivotPositionZ">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="ScalePivotPositionX">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="ScalePivotPositionY">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="ScalePivotPositionZ">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RotatePivotCompensationX">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RotatePivotCompensationY">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RotatePivotCompensationZ">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="ScalePivotCompensationX">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="ScalePivotCompensationY">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="ScalePivotCompensationZ">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="UseKeys">
+                                            <bool>true</bool>
+                                        </attribute>
+                                    </component>
+                                </connected_component>
+                            </attribute>
+                            <attribute sid="MotionParent">
+                                <StrongRef>/Root/Scene/SceneItems/</StrongRef>
+                            </attribute>
+                            <attribute sid="visible">
+                                <bool>true</bool>
+                            </attribute>
+                            <attribute sid="frozen">
+                                <bool>false</bool>
+                            </attribute>
+                            <attribute sid="layer">
+                                <StrongRef></StrongRef>
+                            </attribute>
+                            <attribute sid="wireframe">
+                                <bool>true</bool>
+                            </attribute>
+                            <attribute sid="solid">
+                                <bool>true</bool>
+                            </attribute>
+                            <attribute sid="showrotatepivot">
+                                <bool>false</bool>
+                            </attribute>
+                            <attribute sid="showscalepivot">
+                                <bool>false</bool>
+                            </attribute>
+                            <attribute sid="SkinPose">
+                                <float4x4>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</float4x4>
+                            </attribute>
+                            <attribute sid="SubdLevel">
+                                <int>3</int>
+                            </attribute>
+                            <attribute sid="ShadowOffset">
+                                <float>0</float>
+                            </attribute>
+                            <attribute sid="VertexSmoothing">
+                                <float>89</float>
+                            </attribute>
+                            <attribute sid="OriginalLocation">
+                                <string></string>
+                            </attribute>
+                            <attribute sid="DoubleSided">
+                                <bool>false</bool>
+                            </attribute>
+                        </component>
+                    </technique>
+                </extra>
+            </node>
+            <node id="Polygonal_Geometry_1" name="Polygonal_Geometry_1">
+                <translate sid="translate">0 0 0</translate>
+                <translate sid="rotatePivotCompensation">0 0 0</translate>
+                <translate sid="rotatePivot">0 0 0</translate>
+                <rotate sid="rotatePivotOffsetY">0 1 0 0</rotate>
+                <rotate sid="rotatePivotOffsetX">1 0 0 0</rotate>
+                <rotate sid="rotatePivotOffsetZ">0 0 1 0</rotate>
+                <rotate sid="rotateY">0 1 0 0</rotate>
+                <rotate sid="rotateX">1 0 0 0</rotate>
+                <rotate sid="rotateZ">0 0 1 0</rotate>
+                <rotate sid="rotatePivotAxisY">0 1 0 0</rotate>
+                <rotate sid="rotatePivotAxisX">1 0 0 0</rotate>
+                <rotate sid="rotatePivotAxisZ">0 0 1 0</rotate>
+                <translate sid="rotatePivotInverse">0 0 0</translate>
+                <translate sid="scalePivotCompensation">0 0 0</translate>
+                <translate sid="scalePivot">0 0 0</translate>
+                <scale sid="scale">1 1 1</scale>
+                <translate sid="scalePivotInverse">0 0 0</translate>
+                <instance_geometry url="#Polygonal_Geometry_1_lib">
+                    <bind_material>
+                        <technique_common>
+                            <instance_material symbol="Default" target="#Default"/>
+                            <instance_material symbol="Default_1" target="#Default_1"/>
+                            <instance_material symbol="Default_2" target="#Default_2"/>
+                            <instance_material symbol="Default_3" target="#Default_3"/>
+                        </technique_common>
+                    </bind_material>
+                </instance_geometry>
+                <extra>
+                    <technique profile="LWCORE">
+                        <component id="comp_SceneObject_2" type="SceneObject">
+                            <attribute sid="Name" dynamic="custom">
+                                <description>
+                                    <parameter_type value="string"/>
+                                    <is_input value="true"/>
+                                </description>
+                                <string>Polygonal_Geometry_1</string>
+                            </attribute>
+                            <attribute sid="Self" dynamic="custom">
+                                <description>
+                                    <parameter_type value="WeakRef"/>
+                                    <is_input value="false"/>
+                                </description>
+                            </attribute>
+                            <attribute sid="Name_1">
+                                <string></string>
+                            </attribute>
+                            <attribute sid="Transform">
+                                <StrongRef></StrongRef>
+                                <connected_component target_attribute="Transform">
+                                    <component id="comp_FKMotionController_2" type="FKMotionController">
+                                        <attribute sid="Name">
+                                            <string></string>
+                                        </attribute>
+                                        <attribute sid="TranslateX">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="TranslateY">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="TranslateZ">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RotateX">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RotateY">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RotateZ">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RotateOrder">
+                                            <int>3</int>
+                                        </attribute>
+                                        <attribute sid="ScaleX">
+                                            <float>1</float>
+                                        </attribute>
+                                        <attribute sid="ScaleY">
+                                            <float>1</float>
+                                        </attribute>
+                                        <attribute sid="ScaleZ">
+                                            <float>1</float>
+                                        </attribute>
+                                        <attribute sid="RotateAxisX">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RotateAxisY">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RotateAxisZ">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RotateAxisOrder">
+                                            <int>3</int>
+                                        </attribute>
+                                        <attribute sid="RotateOffsetX">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RotateOffsetY">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RotateOffsetZ">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RotateOffsetOrder">
+                                            <int>3</int>
+                                        </attribute>
+                                        <attribute sid="RotatePivotPositionX">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RotatePivotPositionY">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RotatePivotPositionZ">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="ScalePivotPositionX">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="ScalePivotPositionY">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="ScalePivotPositionZ">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RotatePivotCompensationX">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RotatePivotCompensationY">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RotatePivotCompensationZ">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="ScalePivotCompensationX">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="ScalePivotCompensationY">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="ScalePivotCompensationZ">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="UseKeys">
+                                            <bool>true</bool>
+                                        </attribute>
+                                    </component>
+                                </connected_component>
+                            </attribute>
+                            <attribute sid="MotionParent">
+                                <StrongRef>/Root/Scene/SceneItems/</StrongRef>
+                            </attribute>
+                            <attribute sid="visible">
+                                <bool>true</bool>
+                            </attribute>
+                            <attribute sid="frozen">
+                                <bool>false</bool>
+                            </attribute>
+                            <attribute sid="layer">
+                                <StrongRef></StrongRef>
+                            </attribute>
+                            <attribute sid="wireframe">
+                                <bool>true</bool>
+                            </attribute>
+                            <attribute sid="solid">
+                                <bool>true</bool>
+                            </attribute>
+                            <attribute sid="showrotatepivot">
+                                <bool>false</bool>
+                            </attribute>
+                            <attribute sid="showscalepivot">
+                                <bool>false</bool>
+                            </attribute>
+                            <attribute sid="SkinPose">
+                                <float4x4>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</float4x4>
+                            </attribute>
+                            <attribute sid="SubdLevel">
+                                <int>3</int>
+                            </attribute>
+                            <attribute sid="ShadowOffset">
+                                <float>0</float>
+                            </attribute>
+                            <attribute sid="VertexSmoothing">
+                                <float>89</float>
+                            </attribute>
+                            <attribute sid="OriginalLocation">
+                                <string></string>
+                            </attribute>
+                            <attribute sid="DoubleSided">
+                                <bool>false</bool>
+                            </attribute>
+                        </component>
+                    </technique>
+                </extra>
+            </node>
+            <node id="Polygonal_Geometry_2" name="Polygonal_Geometry_2">
+                <translate sid="translate">0 0 0</translate>
+                <translate sid="rotatePivotCompensation">0 0 0</translate>
+                <translate sid="rotatePivot">0 0 0</translate>
+                <rotate sid="rotatePivotOffsetY">0 1 0 0</rotate>
+                <rotate sid="rotatePivotOffsetX">1 0 0 0</rotate>
+                <rotate sid="rotatePivotOffsetZ">0 0 1 0</rotate>
+                <rotate sid="rotateY">0 1 0 0</rotate>
+                <rotate sid="rotateX">1 0 0 0</rotate>
+                <rotate sid="rotateZ">0 0 1 0</rotate>
+                <rotate sid="rotatePivotAxisY">0 1 0 0</rotate>
+                <rotate sid="rotatePivotAxisX">1 0 0 0</rotate>
+                <rotate sid="rotatePivotAxisZ">0 0 1 0</rotate>
+                <translate sid="rotatePivotInverse">0 0 0</translate>
+                <translate sid="scalePivotCompensation">0 0 0</translate>
+                <translate sid="scalePivot">0 0 0</translate>
+                <scale sid="scale">1 1 1</scale>
+                <translate sid="scalePivotInverse">0 0 0</translate>
+                <instance_geometry url="#Polygonal_Geometry_2_lib">
+                    <bind_material>
+                        <technique_common>
+                            <instance_material symbol="Default" target="#Default"/>
+                            <instance_material symbol="Default_1" target="#Default_1"/>
+                            <instance_material symbol="Default_2" target="#Default_2"/>
+                            <instance_material symbol="Default_3" target="#Default_3"/>
+                        </technique_common>
+                    </bind_material>
+                </instance_geometry>
+                <extra>
+                    <technique profile="LWCORE">
+                        <component id="comp_SceneObject_3" type="SceneObject">
+                            <attribute sid="Name" dynamic="custom">
+                                <description>
+                                    <parameter_type value="string"/>
+                                    <is_input value="true"/>
+                                </description>
+                                <string>Polygonal_Geometry_2</string>
+                            </attribute>
+                            <attribute sid="Self" dynamic="custom">
+                                <description>
+                                    <parameter_type value="WeakRef"/>
+                                    <is_input value="false"/>
+                                </description>
+                            </attribute>
+                            <attribute sid="Name_1">
+                                <string></string>
+                            </attribute>
+                            <attribute sid="Transform">
+                                <StrongRef></StrongRef>
+                                <connected_component target_attribute="Transform">
+                                    <component id="comp_FKMotionController_3" type="FKMotionController">
+                                        <attribute sid="Name">
+                                            <string></string>
+                                        </attribute>
+                                        <attribute sid="TranslateX">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="TranslateY">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="TranslateZ">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RotateX">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RotateY">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RotateZ">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RotateOrder">
+                                            <int>3</int>
+                                        </attribute>
+                                        <attribute sid="ScaleX">
+                                            <float>1</float>
+                                        </attribute>
+                                        <attribute sid="ScaleY">
+                                            <float>1</float>
+                                        </attribute>
+                                        <attribute sid="ScaleZ">
+                                            <float>1</float>
+                                        </attribute>
+                                        <attribute sid="RotateAxisX">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RotateAxisY">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RotateAxisZ">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RotateAxisOrder">
+                                            <int>3</int>
+                                        </attribute>
+                                        <attribute sid="RotateOffsetX">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RotateOffsetY">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RotateOffsetZ">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RotateOffsetOrder">
+                                            <int>3</int>
+                                        </attribute>
+                                        <attribute sid="RotatePivotPositionX">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RotatePivotPositionY">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RotatePivotPositionZ">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="ScalePivotPositionX">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="ScalePivotPositionY">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="ScalePivotPositionZ">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RotatePivotCompensationX">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RotatePivotCompensationY">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="RotatePivotCompensationZ">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="ScalePivotCompensationX">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="ScalePivotCompensationY">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="ScalePivotCompensationZ">
+                                            <float>0</float>
+                                        </attribute>
+                                        <attribute sid="UseKeys">
+                                            <bool>true</bool>
+                                        </attribute>
+                                    </component>
+                                </connected_component>
+                            </attribute>
+                            <attribute sid="MotionParent">
+                                <StrongRef>/Root/Scene/SceneItems/</StrongRef>
+                            </attribute>
+                            <attribute sid="visible">
+                                <bool>true</bool>
+                            </attribute>
+                            <attribute sid="frozen">
+                                <bool>false</bool>
+                            </attribute>
+                            <attribute sid="layer">
+                                <StrongRef></StrongRef>
+                            </attribute>
+                            <attribute sid="wireframe">
+                                <bool>true</bool>
+                            </attribute>
+                            <attribute sid="solid">
+                                <bool>true</bool>
+                            </attribute>
+                            <attribute sid="showrotatepivot">
+                                <bool>false</bool>
+                            </attribute>
+                            <attribute sid="showscalepivot">
+                                <bool>false</bool>
+                            </attribute>
+                            <attribute sid="SkinPose">
+                                <float4x4>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</float4x4>
+                            </attribute>
+                            <attribute sid="SubdLevel">
+                                <int>3</int>
+                            </attribute>
+                            <attribute sid="ShadowOffset">
+                                <float>0</float>
+                            </attribute>
+                            <attribute sid="VertexSmoothing">
+                                <float>89</float>
+                            </attribute>
+                            <attribute sid="OriginalLocation">
+                                <string></string>
+                            </attribute>
+                            <attribute sid="DoubleSided">
+                                <bool>false</bool>
+                            </attribute>
+                        </component>
+                    </technique>
+                </extra>
+            </node>
+            <extra>
+                <technique profile="LWCORE">
+                    <construction_layers active_layer="Default_Layer">
+                        <construction_layer>
+                            <component id="comp_ConstructionLayer" type="ConstructionLayer">
+                                <attribute sid="Name" dynamic="custom">
+                                    <description>
+                                        <parameter_type value="string"/>
+                                        <is_input value="true"/>
+                                    </description>
+                                    <string>Default_Layer</string>
+                                </attribute>
+                                <attribute sid="Self" dynamic="custom">
+                                    <description>
+                                        <parameter_type value="WeakRef"/>
+                                        <is_input value="false"/>
+                                    </description>
+                                </attribute>
+                                <attribute sid="Name_1">
+                                    <string></string>
+                                </attribute>
+                                <attribute sid="visible">
+                                    <bool>true</bool>
+                                </attribute>
+                                <attribute sid="frozen">
+                                    <bool>false</bool>
+                                </attribute>
+                                <attribute sid="wireframe">
+                                    <bool>true</bool>
+                                </attribute>
+                                <attribute sid="solid">
+                                    <bool>true</bool>
+                                </attribute>
+                            </component>
+                            <item>/Grid/</item>
+                            <item>/Construction_Plane/</item>
+                            <item>/Directional_Light/</item>
+                            <item>/Perspective_Camera/</item>
+                        </construction_layer>
+                    </construction_layers>
+                    <time_operator>
+                        <component id="comp_SceneTime" type="SceneTime">
+                            <attribute sid="Name">
+                                <string></string>
+                            </attribute>
+                        </component>
+                    </time_operator>
+                    <dynamics_world/>
+                </technique>
+            </extra>
+        </visual_scene>
+    </library_visual_scenes>
+    <scene>
+        <instance_visual_scene url="#VisualSceneNode"/>
+    </scene>
+</COLLADA>
